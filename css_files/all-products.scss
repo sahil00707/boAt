@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page-head {
+    width: 100vw;
+    height: 80vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .text {
+        text-align: center;
+        h1 {
+            font-size: 4vw;
+
+            color: white;
+        }
+    }
+ 
+}
+
+.gaming-section-all {
+    width: fit-content;
+    padding:50px;
+    h1{
+        font-size: 47px;
+        span{
+            color: red;
+        }
+    }
+    .top-picks {
+        width: fit-content;
+        display:flex;
+        align-items: center;
+      flex-wrap: wrap;
+        margin: 30px auto;
+        margin-bottom: 100px;
+        .card-1 {
+            width: 310px;
+            height: 380px;
+            background-color: rgb(206, 206, 238);
+            border-radius: 10px;
+            position: relative;
+margin-right: 30px;
+margin-bottom: 30px;
+            padding: 11px;
+            .head {
+                width: 100%;
+                height: 52%;
+
+                .offer-red {
+                    width: fit-content;
+                    height: fit-content;
+                    background-color: red;
+                    color: white;
+                    position: absolute;
+                    left: 0;
+                    top: 20px;
+                    font-weight: bolder;
+                    z-index: 10;
+
+                    padding: 5px 15px;
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    border-radius: 5px;
+                }
+            }
+            .tail {
+                margin-top: 10px;
+                width: 100%;
+                height: fit-content;
+                background-color: white;
+                border-radius: 5px;
+                text-align: left;
+                padding: 12px;
+                h4 {
+                    color: black;
+                    margin-bottom: 5px;
+                    font-family: "Poppins", sans-serif;
+                }
+                .border {
+                    height: 1px;
+                    width: 100%;
+                    background-color: rgb(210, 203, 203);
+                }
+                .price {
+                    padding: 10px 0;
+                    h5 {
+                        color: red;
+                        font-size: larger;
+                        span {
+                            color: grey;
+                            text-decoration: line-through;
+                            font-size: small;
+                        }
+                    }
+                    p {
+                        color: green;
+                        font-weight: bolder;
+                    }
+                }
+                .order-btn {
+                    width: 100%;
+                    input{
+                        width: 100%;
+                        padding: 8px 0;
+                        background-color: red;
+                        color: white;
+                        border: none;
+                        font-size: medium;
+                        font-weight: bolder;
+                        font-family: "Poppins", sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}

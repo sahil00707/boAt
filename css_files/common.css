@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.n-big {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.n-big .navbar {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 40px;
+  background-color: black;
+}
+
+.n-big .navbar .logo h1 span {
+  color: red;
+}
+
+.n-big .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.n-big .navbar ul button {
+  background-color: transparent;
+  border: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.n-big .navbar ul button a {
+  text-decoration: none;
+}
+
+.n-big .navbar .cart-others {
+  position: relative;
+}
+
+.n-big .navbar .cart-others button {
+  background-color: transparent;
+  border: none;
+}
+
+.n-big .navbar .cart-others .img {
+  width: 33px;
+  height: 33px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.n-big .navbar .cart-others .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.n-big .navbar .cart-others .cart-items {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  height: 21px;
+  width: 21px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+}
+
+.brand-promise {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #ceceee;
+  padding: 3vh 0;
+  text-align: center;
+}
+
+.brand-promise h1 {
+  color: black;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.brand-promise h1 span {
+  color: red;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.brand-promise .promise-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 5vh auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.brand-promise .promise-grid div {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.brand-promise .promise-grid div .img {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  margin: auto;
+}
+
+.brand-promise .promise-grid div .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.brand-promise .promise-grid div h3 {
+  margin-top: 7px;
+  text-align: center;
+  color: black;
+}
+
+.fastest-growing {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #2e2e2e;
+  padding: 15px 10vw;
+}
+
+.fastest-growing p {
+  color: white;
+  font-size: small;
+}
+
+.footer {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 40px 5vw;
+}
+
+.footer .footer-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.footer .footer-small .f-1 h1 span {
+  color: red;
+}
+
+.footer .footer-small .f-1 .form-subscribe {
+  border: 1px solid #4e4e4e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.footer .footer-small .f-1 .form-subscribe form input {
+  width: 20vw;
+  border: none;
+  background-color: transparent;
+}
+
+.footer .footer-small .f-1 .form-subscribe form input:focus {
+  outline: none;
+}
+
+.footer .footer-small .f-1 .form-subscribe button {
+  padding: 7px 30px;
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  border: 1px solid red;
+}
+
+.footer .footer-small .f-2 h3 {
+  text-align: center;
+}
+
+.footer .footer-small .f-2 .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 15px 0;
+}
+
+.footer .footer-small .f-2 .social-icons .icons-1 {
+  margin: 0px;
+}
+
+.footer .footer-small .f-2 .social-icons .icons-1 .img {
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+  position: relative;
+}
+
+.footer .footer-small .f-2 .social-icons .icons-1 .img img {
+  width: 40%;
+  z-index: 20;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.footer .footer-small .f-2 .social-icons .icons-1 .img .white-back-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+  height: 0%;
+  width: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.footer .footer-small .f-2 .social-icons .icons-1 .img:hover .white-back-hover {
+  height: 100%;
+}
+
+.footer .footer-small .f-3 h3 {
+  text-align: left;
+}
+
+.footer .footer-small .f-3 ul {
+  margin: 10px 0;
+}
+
+.footer .footer-small .f-3 ul li {
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 40px 5vw;
+  }
+  .footer .footer-small {
+    display: block;
+    width: 100%;
+  }
+  .footer .footer-small .f-1 h1 span {
+    color: red;
+  }
+  .footer .footer-small .f-1 .form-subscribe {
+    border: 1px solid #4e4e4e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px;
+    margin: 15px 0;
+  }
+  .footer .footer-small .f-1 .form-subscribe form input {
+    width: 20vw;
+    border: none;
+    background-color: transparent;
+  }
+  .footer .footer-small .f-1 .form-subscribe form input:focus {
+    outline: none;
+  }
+  .footer .footer-small .f-1 .form-subscribe button {
+    padding: 7px 30px;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    border: 1px solid red;
+  }
+  .footer .footer-small .f-2 h3 {
+    text-align: center;
+  }
+  .footer .footer-small .f-2 .social-icons {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 15px auto;
+  }
+  .footer .footer-small .f-2 .social-icons .icons-1 {
+    margin: 0px;
+  }
+  .footer .footer-small .f-2 .social-icons .icons-1 .img {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    position: relative;
+  }
+  .footer .footer-small .f-2 .social-icons .icons-1 .img img {
+    width: 40%;
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .footer .footer-small .f-2 .social-icons .icons-1 .img .white-back-hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    z-index: 10;
+    height: 0%;
+    width: 100%;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .footer .footer-small .f-2 .social-icons .icons-1 .img:hover .white-back-hover {
+    height: 100%;
+  }
+  .footer .footer-small .f-3 h3 {
+    text-align: left;
+  }
+  .footer .footer-small .f-3 ul {
+    margin: 10px 0;
+  }
+  .footer .footer-small .f-3 ul li {
+    list-style: none;
+  }
+}
+/*# sourceMappingURL=common.css.map */

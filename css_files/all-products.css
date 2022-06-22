@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page-head {
+  width: 100vw;
+  height: 80vh;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-head .text {
+  text-align: center;
+}
+
+.page-head .text h1 {
+  font-size: 4vw;
+  color: white;
+}
+
+.gaming-section-all {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 50px;
+}
+
+.gaming-section-all h1 {
+  font-size: 47px;
+}
+
+.gaming-section-all h1 span {
+  color: red;
+}
+
+.gaming-section-all .top-picks {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px auto;
+  margin-bottom: 100px;
+}
+
+.gaming-section-all .top-picks .card-1 {
+  width: 310px;
+  height: 380px;
+  background-color: #ceceee;
+  border-radius: 10px;
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding: 11px;
+}
+
+.gaming-section-all .top-picks .card-1 .head {
+  width: 100%;
+  height: 52%;
+}
+
+.gaming-section-all .top-picks .card-1 .head .offer-red {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: red;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  font-weight: bolder;
+  z-index: 10;
+  padding: 5px 15px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.gaming-section-all .top-picks .card-1 .head img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 5px;
+}
+
+.gaming-section-all .top-picks .card-1 .tail {
+  margin-top: 10px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  border-radius: 5px;
+  text-align: left;
+  padding: 12px;
+}
+
+.gaming-section-all .top-picks .card-1 .tail h4 {
+  color: black;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.gaming-section-all .top-picks .card-1 .tail .border {
+  height: 1px;
+  width: 100%;
+  background-color: #d2cbcb;
+}
+
+.gaming-section-all .top-picks .card-1 .tail .price {
+  padding: 10px 0;
+}
+
+.gaming-section-all .top-picks .card-1 .tail .price h5 {
+  color: red;
+  font-size: larger;
+}
+
+.gaming-section-all .top-picks .card-1 .tail .price h5 span {
+  color: grey;
+  text-decoration: line-through;
+  font-size: small;
+}
+
+.gaming-section-all .top-picks .card-1 .tail .price p {
+  color: green;
+  font-weight: bolder;
+}
+
+.gaming-section-all .top-picks .card-1 .tail .order-btn {
+  width: 100%;
+}
+
+.gaming-section-all .top-picks .card-1 .tail .order-btn input {
+  width: 100%;
+  padding: 8px 0;
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: medium;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+/*# sourceMappingURL=all-products.css.map */
