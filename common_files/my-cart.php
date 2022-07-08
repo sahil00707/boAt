@@ -20,7 +20,7 @@
             <h3>Total : Rs.<span id="total-cart">2999</span></h3>
         </div>
         <div class="pay-buy-more">
-            <button class="pay">Pay</button>
+            <button class="pay"><a href="./order.php">Pay</a></button>
           <a href="index.php">
             <button class="buy-more">Buy More</button>
 </a>

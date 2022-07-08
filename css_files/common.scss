@@ -15,7 +15,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 40px;
-     
+
         background-color: black;
         .logo {
             h1 {
@@ -26,16 +26,29 @@
         }
         ul {
             display: flex;
-            button{
+            select {
+                padding: 10px 20px;
+                background-color: black;
+            
+                color: white;
+                border: none;
+                -moz-appearance: none;
+                /* for Chrome */
+                -webkit-appearance: none;
+                text-align: center;
+            }
+select:focus{
+    outline: none;
+}
+            button {
                 background-color: transparent;
                 border: none;
-              margin: 0 10px;
-              cursor: pointer;
-              a{
-                text-decoration: none;
-              }
+                margin: 0 10px;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                }
             }
-       
         }
         .cart-others {
             position: relative;
@@ -68,7 +81,6 @@
             }
         }
     }
-
 }
 
 .brand-promise {
@@ -95,7 +107,7 @@
 
         div {
             text-align: center;
-            margin: 0 20px;
+            margin: 10px 40px;
             .img {
                 width: 70px;
                 height: 70px;

@@ -1,53 +1,25 @@
 <?php 
 session_start();
+//$_SESSION["my_cart"] = array_values($_SESSION["my_cart"]);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="css_files/style.css">
-    <link rel="stylesheet" href="css_files/my-cart.css">
-    <link rel="stylesheet" href="css_files/common.css">
-
-    <link rel="stylesheet" href="css_files/medium-devices-cart.css">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <link rel="preconnect" href="
-   https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-   
+    <title>Home Page</title>
+    <link rel="icon" href="website-icons/headphone.png">
+     <?php
+     include "common-links.php";
+     ?>
 </head>
-
-<body >
-    
+<body > 
 <?php 
-
 require_once("common_files/my-cart.php");
 require_once("common_files/navbar.php");
 ?>
-<div class="shop">
-    <button id="hide-shop"><img src="website-icons/cross-icon.svg" alt=""></button>
-    <ul>
-        <li><a href="gaming.php">Gaming</a></li>
-        <li><a href="smart-watches.php">Smart Watches</a></li>
-        <li><a href="HeadPhones.php">HeadPhones</a></li>
-    </ul>
-</div>
-
-<div class="more">
-    <button id="hide-more"><img src="website-icons/cross-icon.svg" alt=""></button>
-    <ul>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">About Us</a></li>
-    </ul>
-</div>
     <div class="carousel-image">
         <div class="flex">
             <div class="text">
@@ -91,14 +63,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/ANC/boat-airdopes-411-anc-1.webp" alt="">
+                        <img src="website-images/headphones/ANC/boat-airdopes-411-anc-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Airdopes 411 ANC</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 600/-</p>
+                            <h5>Rs. 1999/- <span>Rs.4999</span></h4>
+                            <p>save : 3000/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -112,14 +84,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="">
+                        <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Rockers 235 Pro</h4>
                         <div class="border"></div>
                         <div class="price">
                             <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <p>save : 700/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -133,14 +105,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-102-1.webp" alt="">
+                        <img src="website-images/headphones/wired/boat-bassheads-102-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Bassheads 102</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 349/- <span>Rs.1299</span></h4>
+                            <p>save : 850/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -154,14 +126,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-333-1.webp" alt="">
+                        <img src="website-images/headphones/wireless/boAt-rockers-333-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Rockers 333</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 1499/- <span>Rs.4999</span></h4>
+                            <p>save : 3500/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -177,14 +149,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival </div>
-                        <img src="website-images/smart-watches/boat-storm.webp" alt="">
+                        <img src="website-images/smart-watches/boat-storm.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Storm</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 2499/- <span>Rs.5999</span></h4>
+                            <p>save : 3500/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -198,14 +170,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-flash.webp" alt="">
+                        <img src="website-images/smart-watches/boat-watch-flash.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Watch Flash</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 2290/- <span>Rs.6990</span></h4>
+                            <p>save : 4700/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -219,14 +191,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-iris.webp" alt="">
+                        <img src="website-images/smart-watches/boat-watch-iris.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Watch Iris</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 4399/- <span>Rs.11249</span></h4>
+                            <p>save : 6860/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -240,14 +212,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-wave-pro.webp" alt="">
+                        <img src="website-images/smart-watches/boat-watch-wave-pro.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Watch Wave Pro</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 3299/- <span>Rs.5999</span></h4>
+                            <p>save : 2700/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -262,6 +234,100 @@ require_once("common_files/navbar.php");
         </div>
 
 
+        
+        <div class="top-seller">
+            <h1>Deals <span>O</span>f The Day</h1>
+     
+            <div class="trending-wireless">
+                <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/deals-of-the-day/boAt-bassheads-100-1.webp" alt="" class="p-imgg">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt BassHeads 100</h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 299/- <span>Rs.999</span></h4>
+                            <p>save : 600/-</p>
+
+                        </div>
+                        <div class="order-btn yellow-btn">
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 100">
+</form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/deals-of-the-day/boAt-rockers-518-1.webp" alt="" class="p-imgg">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt Rockers 518</h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 999/- <span>Rs.3990</span></h4>
+                            <p>save : 2990/-</p>
+
+                        </div>
+                        <div class="order-btn yellow-btn">
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Rockers 518">
+</form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/deals-of-the-day/boAt-rockers-400-1.webp" alt="" class="p-imgg">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt Rockers 400</h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 899/- <span>Rs.2990</span></h4>
+                            <p>save : 2091/-</p>
+
+                        </div>
+                        <div class="order-btn yellow-btn">
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Rockers 400">
+</form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/deals-of-the-day/boAt-stone-granade-1.webp" alt="" class="p-imgg">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt Stone Granade</h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 999/- <span>Rs.3990</span></h4>
+                            <p>save : 2991/-</p>
+
+                        </div>
+                        <div class="order-btn yellow-btn">
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Stone Granade">
+</form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+        </div>
+
+
         <div class="top-seller">
             <h1><span>G</span>aming</h1>
      
@@ -269,14 +335,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/gaming/boat-immortal-1000d-1.webp" alt="">
+                        <img src="website-images/gaming/boat-immortal-1000d-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Immortal 1000d</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 600/-</p>
+                            <h5>Rs. 2299/- <span>Rs.5999</span></h4>
+                            <p>save : 3700/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -290,14 +356,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/gaming/boat-immortal-1300-1.webp" alt="">
+                        <img src="website-images/gaming/boat-immortal-1300-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Immortal 1300</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 3499/- <span>Rs.9990</span></h4>
+                            <p>save : 6491/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -312,14 +378,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/gaming/boat-immortal-400-1.webp" alt="">
+                        <img src="website-images/gaming/boat-immortal-400-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Immortal 400</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 1999/- <span>Rs.6999</span></h4>
+                            <p>save : 5000/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -334,13 +400,13 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/gaming/boat-immortal-700-1.webp" alt="">
+                        <img src="website-images/gaming/boat-immortal-700-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Immortal 700</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
+                            <h5>Rs. 2499/- <span>Rs.6990</span></h4>
                             <p>save : 1999/-</p>
 
                         </div>
@@ -364,20 +430,20 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-storm.webp" alt="">
+                        <img src="website-images/smart-watches/boat-storm.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Storm</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 600/-</p>
+                            <h5>Rs. 2499/- <span>Rs.5999</span></h4>
+                            <p>save : 2500/-</p>
 
                         </div>
                         <div class="order-btn">
                        
                         <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original" >
     <input type="hidden" name="product-hidden-name" value="boAt Storm">
 </form>
                         </div>
@@ -386,14 +452,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-flash.webp" alt="">
+                        <img src="website-images/smart-watches/boat-watch-flash.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Watch Flash</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 2290/- <span>Rs.6990</span></h4>
+                            <p>save : 4900/-</p>
 
                         </div>
                         <div class="order-btn">      
@@ -407,14 +473,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-iris.webp" alt="">
+                        <img src="website-images/smart-watches/boat-watch-iris.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Watch Iris</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 4399/- <span>Rs.11249</span></h4>
+                            <p>save : 6461/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -429,14 +495,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-wave-pro.webp" alt="">
+                        <img src="website-images/smart-watches/boat-watch-wave-pro.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Watch Wave Pro</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 3299/- <span>Rs.6999</span></h4>
+                            <p>save : 3700/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -460,14 +526,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-102-1.webp" alt="">
+                        <img src="website-images/headphones/wired/boat-bassheads-102-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt BassHeads 102</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 600/-</p>
+                            <h5>Rs. 349/- <span>Rs.1299</span></h4>
+                            <p>save : 950/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -481,14 +547,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-103-1.webp" alt="">
+                        <img src="website-images/headphones/wired/boat-bassheads-103-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt BassHeads 103</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 499/- <span>Rs.1299</span></h4>
+                            <p>save : 800/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -502,14 +568,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-104-1.webp" alt="">
+                        <img src="website-images/headphones/wired/boat-bassheads-104-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt BassHeads 104</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 399/- <span>Rs.999</span></h4>
+                            <p>save : 600/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -523,14 +589,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-242-2.webp" alt="">
+                        <img src="website-images/headphones/wired/boat-bassheads-242-2.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt BassHeads 242</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 499/- <span>Rs.1499</span></h4>
+                            <p>save : 1000/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -548,47 +614,7 @@ require_once("common_files/navbar.php");
 
 
         <!--     New Launches   -->
-        <div class="new-launches">
-            <h1>New <span>L</span>aunches</h1>
-            <div class="new-launch-product">
-                <div class="img">
-                    <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="">
-                </div>
-                <div class="product-description">
-                    <p>Smart Watch</p>
-                    <div class="border-red"></div>
-                    <h2>bo<span>A</span>t wave Connect</h2>
-                    <div class="special-launch-price">
-                        Special Launch Price
-                    </div>
-                    <h3>Rs. 3499</h3>
-                    <div class="des-feature-btns">
-                        <div class="des-btn">
-                            <button class="des-button"   >Description</button>
-                        </div>
-                        <div class="feature-btn">
-                            <button class="feature-button">Features</button>
-                        </div>
-                    </div>
-                    <div class="space">
-                        <div class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem libero impedit eum esse
-                            cumque quos a dolor laudantium, nobis hic?
-                        </div>
-                        <div class="features">
-                            <ul>
-                                <li>10mm drivers</li>
-                                <li>10mm drivers</li>
-                                <li>10mm drivers</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="buy-now">
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+      
 
         <div class="top-seller">
             <h1>Trending <span>W</span>ireless</h1>
@@ -597,7 +623,7 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="">
+                        <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Rockers 235 Pro</h4>
@@ -618,14 +644,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-255-pro-1.webp" alt="">
+                        <img src="website-images/headphones/wireless/boAt-rockers-255-pro-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Rockers 255 Pro</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 1499/- <span>Rs.3499</span></h4>
+                            <p>save : 2000/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -639,14 +665,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-333-1.webp" alt="">
+                        <img src="website-images/headphones/wireless/boAt-rockers-333-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Rockers 333 </h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 1499/- <span>Rs.4999</span></h4>
+                            <p>save : 3500/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -660,14 +686,14 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-333-pro-1.webp" alt="">
+                        <img src="website-images/headphones/wireless/boAt-rockers-333-pro-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Rockers 333 Pro</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 1799/- <span>Rs.2999</span></h4>
+                            <p>save : 1200/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -688,7 +714,7 @@ require_once("common_files/navbar.php");
                 <div class="review">
                     <div class="round-red"></div>
                     <div class="head">
-                        <img src="website-images/gaming/boat-immortal-1000d-2.webp" alt="">
+                        <img src="website-images/gaming/boat-immortal-1000d-2.webp" alt="" class="p-imgg">
                     </div>
 
                     <div class="tail">
@@ -696,7 +722,15 @@ require_once("common_files/navbar.php");
                         <div class="tt">
 
                             <h5>"It's value for money,best sound quality"</h5>
-                            <button>Buy Now</button>
+                            <button>
+                                
+                        <div class="order-btn">
+<form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Buy Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Immortal 1000d">
+</form>
+                            </button>
+                            
                         </div>
                     </div>
                 </div>
@@ -704,31 +738,133 @@ require_once("common_files/navbar.php");
                 <div class="review">
                     <div class="round-red"></div>
                     <div class="head">
-                        <img src="website-images/headphones/ANC/boat-airdopes-500-anc-2.webp" alt="">
+                        <img src="website-images/headphones/ANC/boat-airdopes-500-anc-2.webp" alt="" class="p-imgg">
                     </div>
 
                     <div class="tail">
                         <div class="tt">
                             <h5>"The battery backup is something unbelievable"</h5>
-                            <button>Buy Now</button>
+                            <button>
+                        <div class="order-btn">
+<form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Buy Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Airdopes 500 ANC">
+</form></button>
                         </div>
                     </div>
                 </div>
                 <div class="review">
                     <div class="round-red"></div>
                     <div class="head">
-                        <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="">
+                        <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="" class="p-imgg">
                     </div>
 
                     <div class="tail">
                         <div class="tt">
                             <h5>"Amazing product,great sound quality"</h5>
-                            <button>Buy Now</button>
+                            <button>
+                        <div class="order-btn">
+<form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Buy Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Rockers 235 Pro">
+</form></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="top-seller">
+            <h1>Trending <span>A</span>irdopes</h1>
+     
+            <div class="trending-wireless">
+                <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/headphones/ANC/boAt-airdopes-411-anc-1.webp" alt="" class="p-imgg">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt Airdopes 411 ANC</h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 1999/- <span>Rs.4999</span></h4>
+                            <p>save : 3000/-</p>
+
+                        </div>
+                        <div class="order-btn">
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Airdopes 411 ANC">
+</form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/headphones/ANC/boAt-airdopes-500-anc-1.webp" alt="" class="p-imgg">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt Airdopes 500 ANC</h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 4990/- <span>Rs.9990</span></h4>
+                            <p>save : 5000/-</p>
+
+                        </div>
+                        <div class="order-btn">
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Airdopes 500 ANC">
+</form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/headphones/ANC/boAt-airdopes-501-anc-1.webp" alt="" class="p-imgg">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt Airdopes 501 ANC</h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 3999/- <span>Rs.9999</span></h4>
+                            <p>save : 5990/-</p>
+
+                        </div>
+                        <div class="order-btn">
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Airdopes 501 ANC">
+</form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/headphones/ANC/boAt-airdopes-601-anc-1.webp" alt="" class="p-imgg">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt Airdopes 601 ANC</h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 3999/- <span>Rs.9990</span></h4>
+                            <p>save : 5990/-</p>
+
+                        </div>
+                        <div class="order-btn">
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Airdopes 601 ANC">
+</form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+        </div>
+
         <div class="in-press">
             <h1>In the <span>P</span>ress</h1>
             <div class="quote">
@@ -771,10 +907,10 @@ require_once("common_files/navbar.php");
       ?>
         <!--     New Launches   -->
     </div>
-    <script src="jQuery_files/index.js"></script>
-    <script src="jQuery_files/my-cart.js"></script>
-    <script src="jQuery_files/add-to-cart.js"></script>
-    <script src="jQuery_files/other.js"></script>
+    
+<?php 
+include "common-jquery.php";
+?>
 </body>
 
 </html>

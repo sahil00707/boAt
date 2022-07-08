@@ -24,6 +24,7 @@ $product_imp_category=$row['product-category'];
 $product_imp_color=$row['product-color'];
 $product_imp_dashed_price=$row['product-dashed-price'];
 $product_imp_img=$row['product-image'];
+$description_imp=$row['product-description'];
 if($row['product-other-image']!="")
 $product_imp_img2=$row['product-other-image'];
 break;
@@ -74,8 +75,7 @@ break;
                 <div class="product-name">
                     <h1 id="product-name-imp"><?php echo $product_imp_name?></h1>
                     <div class="border"></div>
-                    <div class="color">color : <span> <?php echo $product_imp_color?></span>
-                    </div>
+               
                     <div class="price">
                         <h2>Price : <span>Rs.</span> <span  id="product-price-original"><?php echo $product_imp_price?></span></h2>
                     </div>
@@ -135,47 +135,72 @@ break;
             <div class="btn3"><button>Reviews</button></div>
         </div>
         <div class="description">
-            <h1>bo<span>A</span>t Rockerz 330 - Bluetooth Earphones</h1>
-            Let's drench in music and experience every beat differently. Powered with boAt Signature Sound, Rockerz 330
-            is here to get you grooving to a thumping bass designed only for audiophiles! Keep your charging worries at
-            bay; Rockerz 330 bluetooth earphones offer a dynamic playtime of 30 hours. That's not it! All is takes is 10
-            minutes of ASAP charge for 10 hours of playtime. This ergonomically designed neckband promises the best of
-            comfort and style. IPX5 protects the Rockerz from sweat and water; so go ahead and make a run to freshen up
-            your mind for these Rockerz don't let anything hold you back. Seamlessly pair two devices at the same time
-            with the dual pairing Bluetooth v5.0. Type C Charging, Single Press Voice Assistant make your audio
-            experience even more enthralling! It's time, LET'S SETTLE for nothing but the best!
+            <h1><?php echo $product_imp_name?></h1>
+      <?php echo $description_imp?>
         </div>
-        <div class="specification">
-            <div class="ul-big">
-                <ul>
-                    <li>specification </li>
-                    <li>specification </li>
-                    <li>specification </li>
-                    <li>specification </li>
-                    <li>specification </li>
-                    <li>specification </li>
-                    <li>specification </li>
-                    <li>specification </li>
-                    <li>specification </li>
+ 
 
-                </ul>
-                <ul>
-                    <li>item </li>
-                    <li>item </li>
-                    <li>item </li>
-                    <li>item </li>
-                    <li>item </li>
-                    <li>item </li>
-                    <li>item </li>
-                    <li>item </li>
-                    <li>item </li>
-                </ul>
-            </div>
-            <div class="img">
+
+    <div class="wireless_earphones_common">
+        <div class="part1">
+            <div class="info1">
                 <img src="<?php echo $product_imp_img?>" alt="">
+                <h2>BOAT Signature Sound with Super Extra Bass</h2>
+                <p>Powered by 10mm drivers, stay ready with Rockerz 255 Pro+ as premium sound is just a pair of wireless earbuds away. Gear up to be transported to a whole new world of music!</p>
             </div>
         </div>
-        <div class="reviews">
+        <div class="part2">
+            <div class="info2">
+                <h2>Up to 40H Nonstop Playback</h2>
+             <p>Keep yourself plugged all day like never before! Moreover, the ASAP Fast Charge Technology can yield 10H of playback within 10 minutes and a full charge within an hour.</p>
+     <div class="wireless_circle">
+         <img src="<?php echo $product_imp_img2?>" alt="">
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="powered_by">
+        <div class="img">
+            <div class="i">
+        <img src="<?php echo $product_imp_img2?>" alt="">
+</div>
+        </div>
+        <div class="content">
+            <div class="c">
+            <h1>Powered By Qualcomm aptX Technology</h1>
+<p>Qualcomm aptX Technology offers extensive voice and music capabilities. <?php echo $product_imp_name?> also supports cVc call noise cancellation technology and aptX codec technology to deliver premium sound and music capabilities.</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="water_resistance">
+     
+     <div class="content">
+        <h2>IPX7 Water & Sweat Resistance</h2>
+        <p>These <?php echo $product_imp_name?> are perfect for your workouts and outdoors! Made from premium materials which makes them sturdy and strong.</p>
+     </div>
+     <div class="ib">
+        <div class="ii">
+     <img src="<?php echo $product_imp_img?>" alt="">
+     </div>
+     </div>
+    </div>
+    <div class="one-click">
+        <div class="hey_siri">
+            <img src="website-images/amazon.png" alt="">
+            <p>Hey Siri</p>
+        </div>
+        <div class="hey_siri">
+            <img src="website-images/google.png" alt="">
+            <p>Ok Google</p>
+        </div>
+
+        <div class="one-click-text">
+            <h1>Activate Voice Assistant With Just One Click</h1>
+        </div>
+    </div>
+    <div class="reviews">
             <h1>Reviews</h1>
             <div class="review-l-r">
                 <button><img src="website-icons/arrow.webp" alt=""></button>
@@ -183,34 +208,41 @@ break;
                 <div class="review1">
              
                     <div class="head">
-                        <img src="<?php  echo $product_imp_img?>" alt="">
+                        <img src="website-icons/avatar1.png" alt="">
                     </div>
 
                     <div class="tail">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est rerum laborum repudiandae iusto.
+                    
+                        <h4>JUST AWESOME</h4>
+                        <p>I love boAt products with closing my eyes.Thier product is their commitment.
                         </p>
+                        <h5> - Sahil Ajmeri</h5>
                     </div>
                 </div>
                 <div class="review2">
                  
                     <div class="head">
-                        <img src="<?php  echo $product_imp_img?>" alt="">
+                        <img src="website-icons/avatar2.png" alt="">
                     </div>
 
                     <div class="tail">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est rerum laborum repudiandae iusto.
+                        <h4>OUTSTANDING</h4>
+                        <p>BoAt give outstanding and satisfactory result without  any failure.
                         </p>
+                        <h5> - Rinku Patel</h5>
                     </div>
                 </div>
                 <div class="review3">
                   
                     <div class="head">
-                        <img src="<?php  echo $product_imp_img?>" alt="">
+                        <img src="website-icons/avatar3.png" alt="">
                     </div>
 
                     <div class="tail">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est rerum laborum repudiandae iusto.
+                        <h4>Comfortable</h4>
+                        <p>Boat products are very comfortable  and its very good as per i am using.
                         </p>
+                        <h5> - Bhavin Padhiyar</h5>
                     </div>
                 </div>
             
@@ -227,10 +259,10 @@ break;
     <div class="scroll-top">
         <button  class="scroll-top-btn"><img src="website-icons/arrow.webp" alt=""></button>
     </div>
-    <script src="jQuery_files/my-cart.js"></script>
-    <script src="jQuery_files/add-to-cart.js"></script>
-    <script src="jQuery_files/product.js"></script>
-    <script src="jQuery_files/index.js"></script>
+    
+<?php 
+include "common-jquery.php";
+?>
 
 </body>
 

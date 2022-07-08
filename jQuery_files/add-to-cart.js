@@ -116,7 +116,7 @@ $(document).ready(function () {
                     success: function (data) {
                         displayCart();
                         totalCart();
-                        removeItem();
+                  //      removeItem();
                     }
                 });
             }
@@ -135,7 +135,7 @@ $(document).ready(function () {
                     success: function (data) {
                         displayCart();
                         totalCart();
-                        removeItem();
+                  //      removeItem();
                     }
                 });
             }

@@ -10,9 +10,21 @@
         </div>
         <ul>
      
-          <button><a href="#">Home</a></button>
-          <button id="shop-id">Shop</button>
-          <button id="more-id">More</button>
+          <button><a href="index.php">Home</a></button>
+      <select name="select_category" onchange="location = this.value;">
+        <option value="">Categories</option>
+        <option value="gaming.php">Gaming</option>
+        <option value="Headphones.php">HeadPhones</option>
+        <option value="smart-watches.php">Smart Watches</option>
+      </select>
+          
+      <select name="select_policy" onchange="location = this.value;">
+        <option value="">About Us</option>
+        <option value="gaming.php">Gaming</option>
+        <option value="Headphones.php">HeadPhones</option>
+        <option value="smart-watches.php">Smart Watches</option>
+      </select>
+        
        
         </ul>
         <div class="cart-others">

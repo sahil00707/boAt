@@ -43,6 +43,21 @@
   display: flex;
 }
 
+.n-big .navbar ul select {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+  text-align: center;
+}
+
+.n-big .navbar ul select:focus {
+  outline: none;
+}
+
 .n-big .navbar ul button {
   background-color: transparent;
   border: none;
@@ -126,7 +141,7 @@
 
 .brand-promise .promise-grid div {
   text-align: center;
-  margin: 0 20px;
+  margin: 10px 40px;
 }
 
 .brand-promise .promise-grid div .img {

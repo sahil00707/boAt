@@ -1,10 +1,11 @@
 <?php 
 session_start();
 //session_destroy();
-//session end
+
+
+//dispplay the cart items if any otherwise  will show Else part
 if(isset($_SESSION['my_cart'])){
     foreach($_SESSION['my_cart'] as $row){
-    
       ?>
         <div class="cart-item">
                     <div class="cart-item-image">
@@ -12,7 +13,7 @@ if(isset($_SESSION['my_cart'])){
                     </div>
                     <div class="cart-item-info">
                         <h4><?php  echo $row['product_name']?></h4>
-                        <h5 class="cart-price">Rs. <?php echo $row['product_modified_price']?> <span>Rs.<?php echo $row['product_dashed_price']?></span></h5>
+                        <h5 class="cart-price">Rs. <?php echo $row['product_modified_price']?></h5>
                         <div class="quantity-remove">
                             <div class="quantity">
                                 <div class="select-quantity">
@@ -31,8 +32,7 @@ if(isset($_SESSION['my_cart'])){
     
                     </div>
                 </div>
-      <?php
-        
+      <?php 
     }
 }
 else 

@@ -3,7 +3,6 @@ session_start();
 require_once("db_connect.php");
 if(isset($_SESSION['my_cart'])){
 $modify_btn_value=$_POST['modify_btn_value'];
-
 $product_price_original=$_SESSION['my_cart'][$modify_btn_value]['product_current_price'];
 $i=$_POST['i'];
 $sessionArrayIndex=array_column($_SESSION['my_cart'],'product_quantity');

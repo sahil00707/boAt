@@ -5,19 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaming</title>
-    <link rel="stylesheet" href="css_files/product.css">
-    <link rel="stylesheet" href="css_files/style.css">
-    <link rel="stylesheet" href="css_files/my-cart.css">
-    <link rel="stylesheet" href="css_files/common.css">
-    <link rel="stylesheet" href="css_files/all-products.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"> </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <?php
+     include "common-links.php";
+     ?>
 
 </head>
 <body>
@@ -28,100 +18,12 @@
     <?php 
       require_once("common_files/navbar.php");
       ?>
-      <div class="page-head">
+      <div class="page-head" style=" 
+    background: url(website-images/headphonee.jpg);
+    background-size: cover;
+    background-attachment: fixed;"> 
         <div class="text"><h1>HeadPhones</h1></div>
       </div>
-      <div class="gaming-section-all">
-        <h1><span>A</span>NC</h1>
-        <div class="top-picks">
-        <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-102-1.webp" alt="">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt BassHeads 102</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 600/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 102">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-103-1.webp" alt="">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt BassHeads 103</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 103">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-104-1.webp" alt="">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt BassHeads 104</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 104">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-242-2.webp" alt="">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt BassHeads 242</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 242">
-</form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-      </div>
-
-
       <div class="gaming-section-all">
         <h1><span>W</span>ired</h1>
         <div class="top-picks">
@@ -134,8 +36,8 @@
                         <h4>boAt BassHeads 102</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 600/-</p>
+                            <h5>Rs. 349/- <span>Rs.1299</span></h4>
+                            <p>save : 950/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -155,8 +57,8 @@
                         <h4>boAt BassHeads 103</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 499/- <span>Rs.1299</span></h4>
+                            <p>save : 800/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -176,8 +78,8 @@
                         <h4>boAt BassHeads 104</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 399/- <span>Rs.999</span></h4>
+                            <p>save : 600/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -197,14 +99,105 @@
                         <h4>boAt BassHeads 242</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 499/- <span>Rs.1499</span></h4>
+                            <p>save : 1000/-</p>
 
                         </div>
                         <div class="order-btn">
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="boAt BassHeads 242">
+</form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+
+
+      <div class="gaming-section-all">
+        <h1><span>W</span>ireless</h1>
+        <div class="top-picks">
+        <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt Rockers 235 Pro</h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
+                            <p>save : 600/-</p>
+
+                        </div>
+                        <div class="order-btn">
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Rockers 235 Pro">
+</form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/headphones/wireless/boAt-rockers-255-pro-1.webp" alt="">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt Rockers 255 Pro</h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 1499/- <span>Rs.3499</span></h4>
+                            <p>save : 2000/-</p>
+
+                        </div>
+                        <div class="order-btn">
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Rockers 255 Pro">
+</form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/headphones/wireless/boAt-rockers-333-1.webp" alt="">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt Rockers 333 </h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 1499/- <span>Rs.4999</span></h4>
+                            <p>save : 3500/-</p>
+
+                        </div>
+                        <div class="order-btn">
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Rockers 333">
+</form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/headphones/wireless/boAt-rockers-333-pro-1.webp" alt="">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt Rockers 333 Pro</h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 1799/- <span>Rs.2999</span></h4>
+                            <p>save : 1200/-</p>
+
+                        </div>
+                        <div class="order-btn">
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Rockers 333 Pro">
 </form>
                         </div>
                     </div>
@@ -213,25 +206,25 @@
       </div>
 
       <div class="gaming-section-all">
-        <h1><span>W</span>ireless</h1>
+        <h1><span>A</span>NC</h1>
         <div class="top-picks">
         <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-102-1.webp" alt="">
+                        <img src="website-images/headphones/ANC/boAt-airdopes-411-anc-1.webp" alt="">
                     </div>
                     <div class="tail">
-                        <h4>boAt BassHeads 102</h4>
+                        <h4>boAt Airdopes 411 ANC</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 600/-</p>
+                            <h5>Rs. 1999/- <span>Rs.4999</span></h4>
+                            <p>save : 3000/-</p>
 
                         </div>
                         <div class="order-btn">
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 102">
+    <input type="hidden" name="product-hidden-name" value="boAt Airdopes 411 ANC">
 </form>
                         </div>
                     </div>
@@ -239,20 +232,20 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-103-1.webp" alt="">
+                        <img src="website-images/headphones/ANC/boAt-airdopes-500-anc-1.webp" alt="">
                     </div>
                     <div class="tail">
-                        <h4>boAt BassHeads 103</h4>
+                        <h4>boAt Airdopes 500 ANC</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 4990/- <span>Rs.9990</span></h4>
+                            <p>save : 5000/-</p>
 
                         </div>
                         <div class="order-btn">
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 103">
+    <input type="hidden" name="product-hidden-name" value="boAt Airdopes 500 ANC">
 </form>
                         </div>
                     </div>
@@ -260,20 +253,20 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-104-1.webp" alt="">
+                        <img src="website-images/headphones/ANC/boAt-airdopes-501-anc-1.webp" alt="">
                     </div>
                     <div class="tail">
-                        <h4>boAt BassHeads 104</h4>
+                        <h4>boAt Airdopes 501 ANC</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 3999/- <span>Rs.9999</span></h4>
+                            <p>save : 5990/-</p>
 
                         </div>
                         <div class="order-btn">
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 104">
+    <input type="hidden" name="product-hidden-name" value="boAt Airdopes 501 ANC">
 </form>
                         </div>
                     </div>
@@ -281,28 +274,29 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-242-2.webp" alt="">
+                        <img src="website-images/headphones/ANC/boAt-airdopes-601-anc-1.webp" alt="">
                     </div>
                     <div class="tail">
-                        <h4>boAt BassHeads 242</h4>
+                        <h4>boAt Airdopes 601 ANC</h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 1999/-</p>
+                            <h5>Rs. 3999/- <span>Rs.9990</span></h4>
+                            <p>save : 5990/-</p>
 
                         </div>
                         <div class="order-btn">
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 242">
+    <input type="hidden" name="product-hidden-name" value="boAt Airdopes 601 ANC">
 </form>
                         </div>
                     </div>
                 </div>
             </div>
       </div>
-    <script src="jQuery_files/index.js"></script>
-    <script src="jQuery_files/my-cart.js"></script>
-    <script src="jQuery_files/other.js"></script>
+      
+<?php 
+include "common-jquery.php";
+?>
 </body>
 </html>

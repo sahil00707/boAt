@@ -67,39 +67,22 @@ $(document).ready(
                 $(".press-text").text($(this).val());
                 $(this).css(
                     "filter", "grayscale(50%)",
-                
+
                 );
             }
         );
+        $(".p-imgg").mouseenter(function () {
+            var imgg = $(this).attr("src");
+            var x = imgg.replace("-1", "-2");
+            $(this).attr("src", x);
+        });
+        $(".p-imgg").mouseleave(function () {
+            var imgg = $(this).attr("src");
+            var x = imgg.replace("-2", "-1");
+            $(this).attr("src", x);
+        });
 
-        $("#shop-id").on("click",
-        function(){
-            $(".shop").show();
-            $(".more").hide();
-        }
-        );
-        $("#hide-shop").on("click",
-        function(){
-         
-            $(".shop").hide();
-         
-        }
-        );
-        $("#hide-more").on("click",
-        function(){
-         
-            $(".more").hide();
-         
-        }
-        );
-        $("#more-id").on("click",
-        function(){
-            $(".shop").hide();
-            $(".more").show();
-        }
-        );
-   
 
-     
+
     }
 );

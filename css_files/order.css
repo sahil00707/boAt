@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ff7272;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+body .center {
+  width: 450px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 18px #d80808;
+          box-shadow: 0 0 18px #d80808;
+}
+
+body .center h3 {
+  text-align: center;
+  background-color: red;
+  border-bottom: 2px solid red;
+  color: white;
+  padding: 10px;
+}
+
+body .center input {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 10px;
+  background-color: transparent;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+body .center input[type="submit"] {
+  background-color: red;
+  color: white;
+  border: 2px solid red;
+  font-weight: bolder;
+}
+
+body .center input:focus {
+  outline: 2px solid red;
+  border-color: transparent;
+}
+
+body .center span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .center span p {
+  margin-left: 5px;
+}
+
+body .center a button {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid red;
+  color: red;
+  background-color: transparent;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=order.css.map */

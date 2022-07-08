@@ -8,48 +8,14 @@
 *::-webkit-scrollbar {
     display: none;
 }
+button,input{
+    cursor: pointer;
+}
 
 body {
     height: fit-content;
     width: 100vw;
     background-color: black;
-.shop,.more{
-    background-color: red;
-    padding: 40px;
-    min-width: 200px;
-    height: fit-content;
-    z-index: 100000;
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,50%);
-    text-align: center;
-    display: none;
-  //  position: relative;
-    button{
-        width: 20px;
-        height: 20px;
-       border: none;
-        background-color: transparent;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        cursor: pointer;
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-    ul{
-        li{
-    //        text-decoration: none;
-            list-style: none;
-            a{
-                text-decoration: none;
-            }
-        }
-    }
-}
     .carousel-image {
         height: 100vh;
         width: 100vw;
@@ -61,13 +27,16 @@ body {
             justify-content: center;
             width: 100%;
             height: 100%;
+            overflow: hidden;
             h1 {
                 font-size: 45px;
                 color: black;
+            
                 span {
                     color: red;
                 }
             }
+      
             .border-red {
                 width: 50%;
                 height: 3px;
@@ -272,6 +241,7 @@ body {
                             height: 100%;
                             object-fit: contain;
                             border-radius: 5px;
+                   //         transition: 1s ease;
                         }
                     }
                     .tail {
@@ -313,7 +283,7 @@ body {
                             input {
                                 width: 100%;
                                 padding: 8px 0;
-                                background-color: red;
+                                background: linear-gradient(to right,rgb(254, 62, 62),rgb(212, 4, 4));
                                 color: white;
                                 border: none;
                                 font-size: medium;
@@ -321,142 +291,20 @@ body {
                                 font-family: "Poppins", sans-serif;
                             }
                         }
+                        .yellow-btn{
+                            input{
+                            background: linear-gradient(to right,rgb(248, 248, 51),rgb(222, 222, 31));
+                            color: black;
+                        }}
                     }
                 }
                 .card-1:hover {
-                    background-color: black;
-                    outline: 1px solid rgb(206, 206, 238);
+                    background-color: rgb(123, 123, 234);
+                 //   outline: 1px solid rgb(206, 206, 238);
                 }
             }
         }
-        .new-launches {
-            margin: 5vh 0;
-            padding: 0 5vw;
-            h1 {
-                text-align: center;
-                font-family: "Poppins", sans-serif;
-                span {
-                    color: red;
-                    font-family: "Poppins", sans-serif;
-                }
-            }
-            .new-launch-product {
-                width: 90%;
-                margin: 50px auto;
-                height: 66vh;
-                display: flex;
-                flex-wrap: wrap;
-                .img {
-                    width: 45%;
-                    height: 100%;
-                    background-color: rgb(206, 206, 238);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-top-left-radius: 10px;
-                    border-bottom-left-radius: 10px;
-                    img {
-                        width: 70%;
-                        height: 70%;
-                        object-fit: contain;
-                    }
-                }
-                .product-description {
-                    text-align: center;
-                    padding: 20px 70px;
-                    width: 55%;
-                    background-color: white;
-                    border-top-right-radius: 10px;
-                    border-bottom-right-radius: 10px;
-                    p {
-                        color: grey;
-                    }
-                    .border-red {
-                        width: 100px;
-                        height: 1px;
-
-                        background-color: red;
-                        margin: 10px auto;
-                    }
-                    h2 {
-                        color: black;
-                        span {
-                            color: red;
-                        }
-                    }
-                    .special-launch-price {
-                        width: fit-content;
-                        margin: 15px auto;
-                        background-color: red;
-                        color: white;
-                        padding: 3px 20px;
-                    }
-                    h3 {
-                        color: red;
-                        margin: 15px;
-                    }
-                    .des-feature-btns {
-                        display: flex;
-                        width: fit-content;
-                        margin: 20px auto;
-                        .des-btn {
-                            button {
-                                background-color: black;
-                                color: white;
-                                padding: 5px 15px;
-                                border: 1px solid black;
-                            }
-                        }
-                        .feature-btn {
-                            button {
-                                background-color: transparent;
-                                border: 1px solid black;
-                                color: black;
-                                padding: 5px 15px;
-                            }
-                        }
-                    }
-                    .space {
-                        min-height: 100px;
-                        margin: 10px 0;
-                    }
-                    .description,
-                    .features {
-                        margin: 20px 0;
-                        text-align: left;
-                        color: black;
-                    }
-                    .features {
-                        ul {
-                            width: fit-content;
-                            margin: auto;
-                            li {
-                                color: black;
-                                list-style: square;
-                            }
-                        }
-                    }
-                    .buy-now {
-                        margin: auto;
-
-                        button {
-                            width: 25%;
-                            padding: 10px 0;
-                            background-color: transparent;
-                            color: red;
-                            border: 1px solid red;
-                            border-radius: 5px;
-                            font-weight: bolder;
-                            transition: 0.3s ease;
-                        }
-                        button:hover {
-                            background-color: red;
-                            color: white;
-                        }
-                    }
-                }
-            }
-        }
+    
         .what-people-says {
             background-color: rgb(206, 206, 238);
             padding: 5vh 0 0vh 0;
@@ -528,6 +376,12 @@ body {
                                 border-radius: 5px;
                                 border: 1px solid white;
                                 margin: 20px 0 0 0;
+                                input{
+                                    color: red;
+                                    background-color: transparent;
+                                    border: none;
+                                    font-weight: bolder;
+                                }
                             }
                         }
                     }

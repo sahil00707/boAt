@@ -1,9 +1,6 @@
 <?php 
 session_start();
 //session_destroy();
-
-//session start
-
 $product_name=$_POST['product_name'];
 $product_current_price=$_POST['product_current_price'];
 $product_dashed_price=$_POST['product_dashed_price'];
