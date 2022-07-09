@@ -29,7 +29,7 @@
         <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-storm.webp" alt="">
+                        <img src="website-images/smart-watches/boat-storm-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Storm</h4>
@@ -42,7 +42,7 @@
                         <div class="order-btn">
                        
                         <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original" >
     <input type="hidden" name="product-hidden-name" value="boAt Storm">
 </form>
                         </div>
@@ -51,7 +51,7 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-flash.webp" alt="">
+                        <img src="website-images/smart-watches/boat-watch-flash-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Watch Flash</h4>
@@ -72,7 +72,7 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-iris.webp" alt="">
+                        <img src="website-images/smart-watches/boat-watch-iris-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Watch Iris</h4>
@@ -94,7 +94,7 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-wave-pro.webp" alt="">
+                        <img src="website-images/smart-watches/boat-watch-wave-pro-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Watch Wave Pro</h4>
@@ -115,7 +115,9 @@
                 </div>
             </div>
       </div>
-
+      <?php 
+      include "common_files/footer-others.php";
+      ?>
 <?php 
 include "common-jquery.php";
 ?>

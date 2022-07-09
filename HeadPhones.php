@@ -14,23 +14,28 @@
     
 <?php 
       require_once("common_files/my-cart.php");
-      ?>
-    <?php 
       require_once("common_files/navbar.php");
+
       ?>
+    
       <div class="page-head" style=" 
     background: url(website-images/headphonee.jpg);
     background-size: cover;
     background-attachment: fixed;"> 
         <div class="text"><h1>HeadPhones</h1></div>
       </div>
+
+
+
+
+
       <div class="gaming-section-all">
         <h1><span>W</span>ired</h1>
         <div class="top-picks">
         <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-102-1.webp" alt="">
+                        <img src="website-images/headphones/wired/boat-bassheads-102-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt BassHeads 102</h4>
@@ -51,7 +56,7 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-103-1.webp" alt="">
+                        <img src="website-images/headphones/wired/boat-bassheads-103-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt BassHeads 103</h4>
@@ -72,7 +77,7 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-104-1.webp" alt="">
+                        <img src="website-images/headphones/wired/boat-bassheads-104-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt BassHeads 104</h4>
@@ -85,7 +90,7 @@
                         <div class="order-btn">
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 104">
+    <input type="hidden" name="product-hidden-name" value="boAt Bassheads 104">
 </form>
                         </div>
                     </div>
@@ -93,7 +98,7 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-242-2.webp" alt="">
+                        <img src="website-images/headphones/wired/boat-bassheads-242-2.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt BassHeads 242</h4>
@@ -106,7 +111,7 @@
                         <div class="order-btn">
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 242">
+    <input type="hidden" name="product-hidden-name" value="boAt Bassheads 242">
 </form>
                         </div>
                     </div>
@@ -115,13 +120,18 @@
       </div>
 
 
+
+
+
+
+
       <div class="gaming-section-all">
         <h1><span>W</span>ireless</h1>
         <div class="top-picks">
         <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="">
+                        <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Rockers 235 Pro</h4>
@@ -142,7 +152,7 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-255-pro-1.webp" alt="">
+                        <img src="website-images/headphones/wireless/boAt-rockers-255-pro-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Rockers 255 Pro</h4>
@@ -163,7 +173,7 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-333-1.webp" alt="">
+                        <img src="website-images/headphones/wireless/boAt-rockers-333-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Rockers 333 </h4>
@@ -184,7 +194,7 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-333-pro-1.webp" alt="">
+                        <img src="website-images/headphones/wireless/boAt-rockers-333-pro-2.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Rockers 333 Pro</h4>
@@ -205,13 +215,17 @@
             </div>
       </div>
 
+
+
+
+
       <div class="gaming-section-all">
         <h1><span>A</span>NC</h1>
         <div class="top-picks">
         <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/ANC/boAt-airdopes-411-anc-1.webp" alt="">
+                        <img src="website-images/headphones/ANC/boAt-airdopes-411-anc-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Airdopes 411 ANC</h4>
@@ -232,7 +246,7 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/ANC/boAt-airdopes-500-anc-1.webp" alt="">
+                        <img src="website-images/headphones/ANC/boAt-airdopes-500-anc-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Airdopes 500 ANC</h4>
@@ -253,7 +267,7 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/ANC/boAt-airdopes-501-anc-1.webp" alt="">
+                        <img src="website-images/headphones/ANC/boAt-airdopes-501-anc-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Airdopes 501 ANC</h4>
@@ -274,7 +288,7 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/ANC/boAt-airdopes-601-anc-1.webp" alt="">
+                        <img src="website-images/headphones/ANC/boAt-airdopes-601-anc-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Airdopes 601 ANC</h4>
@@ -294,7 +308,9 @@
                 </div>
             </div>
       </div>
-      
+      <?php 
+      include "common_files/footer-others.php";
+      ?>
 <?php 
 include "common-jquery.php";
 ?>

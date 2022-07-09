@@ -73,15 +73,24 @@ $(document).ready(
         );
         $(".p-imgg").mouseenter(function () {
             var imgg = $(this).attr("src");
-            var x = imgg.replace("-1", "-2");
+            var x = imgg.replace("-1.", "-2.");
             $(this).attr("src", x);
-        });
+        })
         $(".p-imgg").mouseleave(function () {
             var imgg = $(this).attr("src");
-            var x = imgg.replace("-2", "-1");
+            var x = imgg.replace("-2.", "-1.");
             $(this).attr("src", x);
         });
-
+      $(".icons-1").mouseenter(function(){
+    var x= $(this).children("div").children("img").attr("src");
+    var p= x.replace("white","black");
+    $(this).children("div").children("img").attr("src",p);
+      }); 
+      $(".icons-1").mouseleave(function(){
+        var x= $(this).children("div").children("img").attr("src");
+        var p= x.replace("black","white");
+        $(this).children("div").children("img").attr("src",p);
+      }); 
 
 
     }

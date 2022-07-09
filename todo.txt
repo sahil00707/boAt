@@ -1,4 +1,8 @@
-pay
-links
+cart-bug
 blogs
-others
+responsive ness
+paytm 
+product page 3 sections content
+reviews api
+discount
+carousel

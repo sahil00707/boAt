@@ -253,6 +253,100 @@ break;
 </div>
         </div>
     </div>
+
+
+    
+    <div class="gaming-section-all">
+        <h1> You May Also <span>L</span>ike</h1>
+        <div class="top-picks">
+        <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="" class="p-imgg">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt Rockers 235 Pro</h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
+                            <p>save : 700/-</p>
+
+                        </div>
+                        <div class="order-btn">
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Rockers 235 Pro">
+</form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/gaming/boat-immortal-1300-1.webp" alt="" class="p-imgg">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt Immortal 1300</h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 3499/- <span>Rs.9990</span></h4>
+                            <p>save : 6491/-</p>
+
+                        </div>
+                        <div class="order-btn">
+
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt Immortal 1300">
+</form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/smart-watches/boat-watch-flash-1.webp" alt="" class="p-imgg">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt Watch Flash</h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 2290/- <span>Rs.6990</span></h4>
+                            <p>save : 4700/-</p>
+
+                        </div>
+                        <div class="order-btn">
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt  Watch Flash">
+</form>
+                        </div>
+                    </div>
+                </div>   <div class="card-1">
+                    <div class="head">
+                        <div class="offer-red">New Arrival</div>
+                        <img src="website-images/deals-of-the-day/boAt-BassHeads-100-1.webp" alt="" class="p-imgg">
+                    </div>
+                    <div class="tail">
+                        <h4>boAt BassHeads 100</h4>
+                        <div class="border"></div>
+                        <div class="price">
+                            <h5>Rs. 299/- <span>Rs.999</span></h4>
+                            <p>save : 600/-</p>
+
+                        </div>
+                        <div class="order-btn yellow-btn">
+                        <form action="product.php" id="order-form" method="POST">
+    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 100">
+</form>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+      </div>
     <?php 
       require_once("common_files/footer-others.php");
       ?>

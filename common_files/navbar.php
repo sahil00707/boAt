@@ -19,10 +19,10 @@
       </select>
           
       <select name="select_policy" onchange="location = this.value;">
-        <option value="">About Us</option>
-        <option value="gaming.php">Gaming</option>
-        <option value="Headphones.php">HeadPhones</option>
-        <option value="smart-watches.php">Smart Watches</option>
+        <option value="">More</option>
+        <option value="gaming.php">About Us</option>
+        <option value="Headphones.php">Privacy Policy</option>
+        <option value="smart-watches.php">Terms & Conditions</option>
       </select>
         
        

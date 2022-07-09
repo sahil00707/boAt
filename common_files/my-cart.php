@@ -7,7 +7,7 @@
             <h3 id="cart-number-of-items">My Cart (0 Items)</h3>
             <div class="cross">
                 <button class="remove-cart">
-                    <img src="website-icons/cross-icon.svg" alt="">
+                    <img src="website-icons/cross-sign.svg" alt="">
                 </button>
 
             </div>

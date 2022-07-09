@@ -26,7 +26,9 @@ body {
 body .carousel-image {
   height: 100vh;
   width: 100vw;
-  background-color: #ceceee;
+  background: url(../website-images/landing-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   padding: 15vh 15vw;
 }
 
@@ -475,7 +477,7 @@ body .website-content .what-people-says h1 span {
   font-family: "Poppins", sans-serif;
 }
 
-body .website-content .what-people-says .reviews {
+body .website-content .what-people-says .reviews-x {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,20 +490,20 @@ body .website-content .what-people-says .reviews {
   margin: 13vh auto;
 }
 
-body .website-content .what-people-says .reviews .review {
+body .website-content .what-people-says .reviews-x .review {
   width: 380px;
   height: 400px;
   position: relative;
   margin: 20px auto;
 }
 
-body .website-content .what-people-says .reviews .review .head {
+body .website-content .what-people-says .reviews-x .review .head {
   height: 50%;
   width: 100%;
   margin-bottom: -50px;
 }
 
-body .website-content .what-people-says .reviews .review .head img {
+body .website-content .what-people-says .reviews-x .review .head img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -509,7 +511,7 @@ body .website-content .what-people-says .reviews .review .head img {
   z-index: 10;
 }
 
-body .website-content .what-people-says .reviews .review .round-red {
+body .website-content .what-people-says .reviews-x .review .round-red {
   height: 320px;
   width: 320px;
   border: 1px solid red;
@@ -523,7 +525,7 @@ body .website-content .what-people-says .reviews .review .round-red {
   position: absolute;
 }
 
-body .website-content .what-people-says .reviews .review .tail {
+body .website-content .what-people-says .reviews-x .review .tail {
   height: 50%;
   width: 100%;
   background-color: red;
@@ -541,11 +543,11 @@ body .website-content .what-people-says .reviews .review .tail {
   border-bottom-right-radius: 15px;
 }
 
-body .website-content .what-people-says .reviews .review .tail .tt h5 {
+body .website-content .what-people-says .reviews-x .review .tail .tt h5 {
   color: white;
 }
 
-body .website-content .what-people-says .reviews .review .tail .tt button {
+body .website-content .what-people-says .reviews-x .review .tail .tt button {
   background-color: white;
   color: red;
   padding: 7px 40px;
@@ -555,7 +557,7 @@ body .website-content .what-people-says .reviews .review .tail .tt button {
   margin: 20px 0 0 0;
 }
 
-body .website-content .what-people-says .reviews .review .tail .tt button input {
+body .website-content .what-people-says .reviews-x .review .tail .tt button input {
   color: red;
   background-color: transparent;
   border: none;

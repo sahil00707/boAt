@@ -19,8 +19,11 @@ body {
     .carousel-image {
         height: 100vh;
         width: 100vw;
-        background-color: rgb(206, 206, 238);
+        background:   url(../website-images/landing-1.jpg) ;
+        background-size: cover;
+        background-attachment: fixed;
         padding: 15vh 15vw;
+ // background-blend-mode: darken;
         .flex {
             display: flex;
             align-items: center;
@@ -317,7 +320,7 @@ body {
                     font-family: "Poppins", sans-serif;
                 }
             }
-            .reviews {
+            .reviews-x {
                 display: flex;
                 width: 80vw;
                 justify-content: space-between;

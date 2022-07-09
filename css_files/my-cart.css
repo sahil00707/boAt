@@ -235,6 +235,10 @@
   font-weight: bolder;
 }
 
+.my-cart .total-pay-buy-more .pay-buy-more button a {
+  text-decoration: none;
+}
+
 .my-cart .total-pay-buy-more .pay-buy-more .pay {
   background-color: red;
   color: white;

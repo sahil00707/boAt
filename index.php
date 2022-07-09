@@ -26,9 +26,11 @@ require_once("common_files/navbar.php");
                 <h1>Every Call <span>M</span>atters</h1>
                 <div class="border-red"></div>
                 <h2>Dropping the beats and prices</h2>
+                <a href="gaming.php">
                 <button>Shop Now</button>
+</a>
             </div>
-            <img src="website-images/landing-image-1.webp" alt="">
+      
         </div>
     </div>
     <div class="website-content">
@@ -49,10 +51,26 @@ require_once("common_files/navbar.php");
                     <p>When you hear the crowd roar, be assured that it’s KL Rahul making his way to the field. Our
                         hardcore boAthead, KL Rahul, hits it with his performance as well as his fashion statement. On
                         or off field, Rahul always makes #MoveOfTheChampions.</p>
+                        <a href="headphones.php">
                     <button>Shop Now</button>
+</a>
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="top-seller">
             <h1>Best <span>S</span>eller</h1>
             <div class="tab-btns">
@@ -149,7 +167,7 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival </div>
-                        <img src="website-images/smart-watches/boat-storm.webp" alt="" class="p-imgg">
+                        <img src="website-images/smart-watches/boat-storm-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Storm</h4>
@@ -170,7 +188,7 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-flash.webp" alt="" class="p-imgg">
+                        <img src="website-images/smart-watches/boat-watch-flash-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Watch Flash</h4>
@@ -191,7 +209,7 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-iris.webp" alt="" class="p-imgg">
+                        <img src="website-images/smart-watches/boat-watch-iris-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Watch Iris</h4>
@@ -212,7 +230,7 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-wave-pro.webp" alt="" class="p-imgg">
+                        <img src="website-images/smart-watches/boat-watch-wave-pro-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Watch Wave Pro</h4>
@@ -234,6 +252,16 @@ require_once("common_files/navbar.php");
         </div>
 
 
+
+
+
+
+
+
+
+
+
+
         
         <div class="top-seller">
             <h1>Deals <span>O</span>f The Day</h1>
@@ -242,7 +270,7 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/deals-of-the-day/boAt-bassheads-100-1.webp" alt="" class="p-imgg">
+                        <img src="website-images/deals-of-the-day/boAt-BassHeads-100-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt BassHeads 100</h4>
@@ -326,6 +354,17 @@ require_once("common_files/navbar.php");
             </div>
      
         </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
         <div class="top-seller">
@@ -423,6 +462,22 @@ require_once("common_files/navbar.php");
      
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="top-seller">
             <h1>Smart <span>W</span>atches</h1>
      
@@ -430,7 +485,7 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-storm.webp" alt="" class="p-imgg">
+                        <img src="website-images/smart-watches/boat-storm-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Storm</h4>
@@ -452,7 +507,7 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-flash.webp" alt="" class="p-imgg">
+                        <img src="website-images/smart-watches/boat-watch-flash-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Watch Flash</h4>
@@ -473,7 +528,7 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-iris.webp" alt="" class="p-imgg">
+                        <img src="website-images/smart-watches/boat-watch-iris-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Watch Iris</h4>
@@ -495,7 +550,7 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-wave-pro.webp" alt="" class="p-imgg">
+                        <img src="website-images/smart-watches/boat-watch-wave-pro-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Watch Wave Pro</h4>
@@ -517,6 +572,17 @@ require_once("common_files/navbar.php");
             </div>
      
         </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
         <div class="top-seller">
@@ -616,6 +682,13 @@ require_once("common_files/navbar.php");
         <!--     New Launches   -->
       
 
+
+
+
+
+
+
+
         <div class="top-seller">
             <h1>Trending <span>W</span>ireless</h1>
      
@@ -686,7 +759,7 @@ require_once("common_files/navbar.php");
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-333-pro-1.webp" alt="" class="p-imgg">
+                        <img src="website-images/headphones/wireless/boAt-rockers-333-pro-2.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Rockers 333 Pro</h4>
@@ -708,13 +781,25 @@ require_once("common_files/navbar.php");
      
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="what-people-says">
             <h1>What they say <span>A</span>bout us</h1>
-            <div class="reviews">
+            <div class="reviews-x">
                 <div class="review">
                     <div class="round-red"></div>
                     <div class="head">
-                        <img src="website-images/gaming/boat-immortal-1000d-2.webp" alt="" class="p-imgg">
+                        <img src="website-images/gaming/boat-immortal-1000d-2.webp" alt="" class="">
                     </div>
 
                     <div class="tail">
@@ -738,7 +823,7 @@ require_once("common_files/navbar.php");
                 <div class="review">
                     <div class="round-red"></div>
                     <div class="head">
-                        <img src="website-images/headphones/ANC/boat-airdopes-500-anc-2.webp" alt="" class="p-imgg">
+                        <img src="website-images/headphones/ANC/boat-airdopes-500-anc-2.webp" alt="" class="">
                     </div>
 
                     <div class="tail">
@@ -756,7 +841,7 @@ require_once("common_files/navbar.php");
                 <div class="review">
                     <div class="round-red"></div>
                     <div class="head">
-                        <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="" class="p-imgg">
+                        <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="" class="">
                     </div>
 
                     <div class="tail">
@@ -773,6 +858,20 @@ require_once("common_files/navbar.php");
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="top-seller">
             <h1>Trending <span>A</span>irdopes</h1>
      
@@ -865,6 +964,17 @@ require_once("common_files/navbar.php");
      
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
         <div class="in-press">
             <h1>In the <span>P</span>ress</h1>
             <div class="quote">
@@ -899,6 +1009,12 @@ require_once("common_files/navbar.php");
             </div>
 
         </div>
+
+
+
+
+
+
         <div class="scroll-top">
             <button class="scroll-top-btn"><img src="website-icons/arrow.webp" alt=""></button>
         </div>
@@ -907,6 +1023,12 @@ require_once("common_files/navbar.php");
       ?>
         <!--     New Launches   -->
     </div>
+
+
+
+
+
+
     
 <?php 
 include "common-jquery.php";

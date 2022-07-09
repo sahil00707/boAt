@@ -31,7 +31,7 @@
         <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/gaming/boat-immortal-1000d-1.webp" alt="">
+                        <img src="website-images/gaming/boat-immortal-1000d-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Immortal 1000d</h4>
@@ -52,7 +52,7 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/gaming/boat-immortal-1300-1.webp" alt="">
+                        <img src="website-images/gaming/boat-immortal-1300-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Immortal 1300</h4>
@@ -74,7 +74,7 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/gaming/boat-immortal-400-1.webp" alt="">
+                        <img src="website-images/gaming/boat-immortal-400-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Immortal 400</h4>
@@ -96,14 +96,14 @@
                 <div class="card-1">
                     <div class="head">
                         <div class="offer-red">New Arrival</div>
-                        <img src="website-images/gaming/boat-immortal-700-1.webp" alt="">
+                        <img src="website-images/gaming/boat-immortal-700-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Immortal 700</h4>
                         <div class="border"></div>
                         <div class="price">
                             <h5>Rs. 2499/- <span>Rs.6990</span></h4>
-                            <p>save : 4491/-</p>
+                            <p>save : 1999/-</p>
 
                         </div>
                         <div class="order-btn">
@@ -115,8 +115,11 @@
                         </div>
                     </div>
                 </div>
+                </div>
       </div>
-      
+      <?php 
+      include "common_files/footer-others.php";
+      ?>
 <?php 
 include "common-jquery.php";
 ?>

@@ -37,34 +37,34 @@
                     <div class="social-icons">
                         <div class="icons-1">
                             <div class="img">
-                                <img src="website-icons/facebook.png" alt="">
+                                <img src="website-icons/facebook-white.svg" alt="" class="socal-media-icons">
                                 <div class="white-back-hover"></div>
 
                             </div>
                         </div>
                         <div class="icons-1">
                             <div class="img">
-                                <img src="website-icons/gmail.png" alt="">
+                                <img src="website-icons/mail-white.svg" alt="" class="socal-media-icons">
                                 <div class="white-back-hover"></div>
 
                             </div>
                         </div>
                         <div class="icons-1">
                             <div class="img">
-                                <img src="website-icons/instagram.png" alt="">
+                                <img src="website-icons/instagram-white.svg" alt="" class="socal-media-icons">
                                 <div class="white-back-hover"></div>
 
                             </div>
                         </div>
                         <div class="icons-1">
                             <div class="img">
-                                <img src="website-icons/linkedin.png" alt="">
+                                <img src="website-icons/linkedin-white.svg" alt="" class="socal-media-icons">
                                 <div class="white-back-hover"></div>
                             </div>
                         </div>
                         <div class="icons-1">
                             <div class="img">
-                                <img src="website-icons/twitter.png" alt="">
+                                <img src="website-icons/twitter-white.svg" alt="" class="socal-media-icons">
                                 <div class="white-back-hover"></div>
 
                             </div>
