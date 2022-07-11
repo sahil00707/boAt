@@ -121,6 +121,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 5px 0;
 }
 
 .my-cart .cart-item .cart-item-info .quantity {
@@ -192,6 +193,13 @@
   background-color: red;
   color: white;
   border: none;
+}
+
+.my-cart .total-pay-buy-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 400px;
 }
 
 .my-cart .total-pay-buy-more .total-cart {

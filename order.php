@@ -65,7 +65,8 @@ window.location.href='index.php';
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-   
+    <link rel="icon" href="website-icons/website-logo-icons/operation.png">
+
     <title>Checkout</title>
 </head>
 <body>

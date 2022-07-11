@@ -40,19 +40,11 @@ break;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
-    <link rel="stylesheet" href="css_files/product.css">
-    <link rel="stylesheet" href="css_files/style.css">
-    <link rel="stylesheet" href="css_files/my-cart.css">
-    <link rel="stylesheet" href="css_files/common.css">
-    <link rel="stylesheet" href="css_files/medium-devices-cart.css">
-    <link rel="stylesheet" href="css_files/medium-devices-product.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"> </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="icon" href="website-icons/website-logo-icons/speaker.png">
+
+    <?php
+     include "common-links.php";
+     ?>
 </head>
 
 <body>
@@ -103,7 +95,7 @@ break;
         <div class="product-section-3">
             <div class="cart">
                 <h1>Rs.<span id="product-price-cart"><?php echo $product_imp_price?></span> <span id="product-price-cart-dashed">Rs. <?php echo $product_imp_dashed_price?></span></h1>
-                <h2>You save Rs. <?php echo $product_imp_dashed_price-$product_imp_price?>(64%)</h2>
+                <h2>You save Rs. <?php echo $product_imp_dashed_price-$product_imp_price?>(<?php  echo  round(100*($product_imp_dashed_price-$product_imp_price)/$product_imp_dashed_price) ?>% OFF)</h2>
 
                 <div class="quantity">
                     <div class="select-quantity">
@@ -131,41 +123,17 @@ break;
     <div class="description-specification-reviews">
         <div class="btns-3">
             <div class="btn1"><button>Description</button></div>
-            <div class="btn2"><button>Specification</button></div>
-            <div class="btn3"><button>Reviews</button></div>
         </div>
         <div class="description">
             <h1><?php echo $product_imp_name?></h1>
-      <?php echo $description_imp?>
+           <?php echo $description_imp?>
         </div>
  
 
 
-    <div class="wireless_earphones_common">
-        <div class="part1">
-            <div class="info1">
-                <img src="<?php echo $product_imp_img?>" alt="">
-                <h2>BOAT Signature Sound with Super Extra Bass</h2>
-                <p>Powered by 10mm drivers, stay ready with Rockerz 255 Pro+ as premium sound is just a pair of wireless earbuds away. Gear up to be transported to a whole new world of music!</p>
-            </div>
-        </div>
-        <div class="part2">
-            <div class="info2">
-                <h2>Up to 40H Nonstop Playback</h2>
-             <p>Keep yourself plugged all day like never before! Moreover, the ASAP Fast Charge Technology can yield 10H of playback within 10 minutes and a full charge within an hour.</p>
-     <div class="wireless_circle">
-         <img src="<?php echo $product_imp_img2?>" alt="">
-</div>
-            </div>
-        </div>
-    </div>
 
     <div class="powered_by">
-        <div class="img">
-            <div class="i">
-        <img src="<?php echo $product_imp_img2?>" alt="">
-</div>
-        </div>
+   
         <div class="content">
             <div class="c">
             <h1>Powered By Qualcomm aptX Technology</h1>
@@ -177,81 +145,16 @@ break;
     <div class="water_resistance">
      
      <div class="content">
-        <h2>IPX7 Water & Sweat Resistance</h2>
+        <h1>IPX7 Water & Sweat Resistance</h1>
         <p>These <?php echo $product_imp_name?> are perfect for your workouts and outdoors! Made from premium materials which makes them sturdy and strong.</p>
-     </div>
-     <div class="ib">
-        <div class="ii">
-     <img src="<?php echo $product_imp_img?>" alt="">
-     </div>
      </div>
     </div>
     <div class="one-click">
-        <div class="hey_siri">
-            <img src="website-images/amazon.png" alt="">
-            <p>Hey Siri</p>
-        </div>
-        <div class="hey_siri">
-            <img src="website-images/google.png" alt="">
-            <p>Ok Google</p>
-        </div>
-
         <div class="one-click-text">
             <h1>Activate Voice Assistant With Just One Click</h1>
         </div>
     </div>
-    <div class="reviews">
-            <h1>Reviews</h1>
-            <div class="review-l-r">
-                <button><img src="website-icons/arrow.webp" alt=""></button>
-            <div class="review-small">
-                <div class="review1">
-             
-                    <div class="head">
-                        <img src="website-icons/avatar1.png" alt="">
-                    </div>
-
-                    <div class="tail">
-                    
-                        <h4>JUST AWESOME</h4>
-                        <p>I love boAt products with closing my eyes.Thier product is their commitment.
-                        </p>
-                        <h5> - Sahil Ajmeri</h5>
-                    </div>
-                </div>
-                <div class="review2">
-                 
-                    <div class="head">
-                        <img src="website-icons/avatar2.png" alt="">
-                    </div>
-
-                    <div class="tail">
-                        <h4>OUTSTANDING</h4>
-                        <p>BoAt give outstanding and satisfactory result without  any failure.
-                        </p>
-                        <h5> - Rinku Patel</h5>
-                    </div>
-                </div>
-                <div class="review3">
-                  
-                    <div class="head">
-                        <img src="website-icons/avatar3.png" alt="">
-                    </div>
-
-                    <div class="tail">
-                        <h4>Comfortable</h4>
-                        <p>Boat products are very comfortable  and its very good as per i am using.
-                        </p>
-                        <h5> - Bhavin Padhiyar</h5>
-                    </div>
-                </div>
-            
-      
-            </div>
-            <button><img src="website-icons/arrow.webp" alt=""></button>
-
-</div>
-        </div>
+   
     </div>
 
 
@@ -259,91 +162,37 @@ break;
     <div class="gaming-section-all">
         <h1> You May Also <span>L</span>ike</h1>
         <div class="top-picks">
-        <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Rockers 235 Pro</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 700/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Rockers 235 Pro">
-</form>
-                        </div>
-                    </div>
-                </div>
+      
+             
+          
+        <?php 
+            $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation
+            ORDER BY RAND()
+            LIMIT 4;");
+            while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
+            ?>
                 <div class="card-1">
                     <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/gaming/boat-immortal-1300-1.webp" alt="" class="p-imgg">
+                    <div class="offer-red-light">You Save <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
+                        <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
-                        <h4>boAt Immortal 1300</h4>
+                        <h4><?php  echo $smart_watch['product-name']?></h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 3499/- <span>Rs.9990</span></h4>
-                            <p>save : 6491/-</p>
-
-                        </div>
-                        <div class="order-btn">
-
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Immortal 1300">
-</form>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-flash-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Watch Flash</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 2290/- <span>Rs.6990</span></h4>
-                            <p>save : 4700/-</p>
+                            <h5>Rs. <?php  echo $smart_watch['product-price']?>/- <span>Rs.<?php  echo $smart_watch['product-dashed-price']?></span></h4>
+                            <p>save : <?php  echo $smart_watch['product-dashed-price']-$smart_watch['product-price']?>/-</p>
 
                         </div>
                         <div class="order-btn">
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt  Watch Flash">
-</form>
-                        </div>
-                    </div>
-                </div>   <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/deals-of-the-day/boAt-BassHeads-100-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt BassHeads 100</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 299/- <span>Rs.999</span></h4>
-                            <p>save : 600/-</p>
-
-                        </div>
-                        <div class="order-btn yellow-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 100">
+    <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
 </form>
                         </div>
                     </div>
                 </div>
+                <?php } ?>
                 </div>
                 </div>
       </div>

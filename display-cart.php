@@ -15,16 +15,16 @@ if(isset($_SESSION['my_cart'])){
                         <h4><?php  echo $row['product_name']?></h4>
                         <h5 class="cart-price">Rs. <?php echo $row['product_modified_price']?></h5>
                         <div class="quantity-remove">
-                            <div class="quantity">
+                            <!-- <div class="quantity">
                                 <div class="select-quantity">
-                                    <button class="img cart-increase-decrease-btns" id="cart-decrease-btn" value="<?php echo $row['cart_index']?>"><img src="website-icons/minus-sign.png" alt=""></button>
+                                    <button class="img cart-increase-decrease-btns" id="cart-decrease-btn" value="<img src="website-icons/minus-sign.png" alt=""></button>
                                     <div class="quantity-text">
-                                        <h4 id="product-quantity-cart-x"><?php echo $row['product_quantity']?></h4>
+                                        <h4 id="product-quantity-cart-x"></h4>
                                     </div>
                                     <button class="img  cart-increase-decrease-btns" id="cart-increase-btn" value="<?php echo $row['cart_index']?>"><img src="website-icons/plus.png" alt=""></button>
                                 </div>
     
-                            </div>
+                            </div> -->
                             <div class="remove">
                                 <button  class="remove-btns" id="<?php echo $row['cart_index']?>" >Remove</button>
                             </div>

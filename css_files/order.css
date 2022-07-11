@@ -7,7 +7,8 @@
 }
 
 body {
-  background-color: #ff7272;
+  background: -webkit-gradient(linear, left top, right top, from(blue), to(#5a5af9));
+  background: linear-gradient(to right, blue, #5a5af9);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,39 +27,51 @@ body .center {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: white;
   padding: 20px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 18px #d80808;
-          box-shadow: 0 0 18px #d80808;
 }
 
 body .center h3 {
   text-align: center;
-  background-color: red;
-  border-bottom: 2px solid red;
   color: white;
   padding: 10px;
 }
 
 body .center input {
   width: 100%;
-  border: 1px solid gray;
+  border: 2px solid white;
   padding: 10px;
   background-color: transparent;
   margin: 10px 0;
   border-radius: 5px;
+  color: white;
+}
+
+body .center input::-webkit-input-placeholder {
+  color: white;
+}
+
+body .center input:-ms-input-placeholder {
+  color: white;
+}
+
+body .center input::-ms-input-placeholder {
+  color: white;
+}
+
+body .center input::placeholder {
+  color: white;
 }
 
 body .center input[type="submit"] {
-  background-color: red;
-  color: white;
-  border: 2px solid red;
+  background-color: white;
+  color: blue;
+  border: 2px solid white;
   font-weight: bolder;
 }
 
 body .center input:focus {
-  outline: 2px solid red;
+  outline: 2px solid white;
   border-color: transparent;
 }
 
@@ -68,15 +81,20 @@ body .center span {
   display: flex;
 }
 
+body .center span h4 {
+  color: white;
+}
+
 body .center span p {
   margin-left: 5px;
+  color: white;
 }
 
 body .center a button {
   width: 100%;
   padding: 10px;
-  border: 2px solid red;
-  color: red;
+  border: 2px solid white;
+  color: white;
   background-color: transparent;
   font-weight: bolder;
   border-radius: 5px;

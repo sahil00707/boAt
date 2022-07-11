@@ -366,10 +366,12 @@ body .gaming-section-all {
   width: -moz-fit-content;
   width: fit-content;
   padding: 50px;
+  background-color: #272525;
 }
 
 body .gaming-section-all h1 {
-  font-size: 47px;
+  font-size: 37px;
+  text-align: center;
 }
 
 body .gaming-section-all h1 span {
@@ -384,6 +386,9 @@ body .gaming-section-all .top-picks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -545,178 +550,13 @@ body .brand-promise .promise-grid div h3 {
   color: black;
 }
 
-body .reviews {
-  padding: 30px 0;
-  margin: auto;
-  background-color: white;
-}
-
-body .reviews h1 {
-  text-align: center;
-  color: black;
-}
-
-body .reviews .review-l-r button {
-  display: none;
-}
-
-body .reviews .review-small {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 80vw;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 5vh auto;
-}
-
-body .reviews .review-small .review1,
-body .reviews .review-small .review2,
-body .reviews .review-small .review3 {
-  width: 340px;
-  height: 400px;
-  position: relative;
-  margin: 10px auto;
-}
-
-body .reviews .review-small .review1 .head,
-body .reviews .review-small .review2 .head,
-body .reviews .review-small .review3 .head {
-  width: 100%;
-  height: 50%;
-  text-align: center;
-  background-color: transparent;
-  border: 2px solid #626265;
-  border-bottom: none;
-  position: relative;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-body .reviews .review-small .review1 .head img,
-body .reviews .review-small .review2 .head img,
-body .reviews .review-small .review3 .head img {
-  width: 120px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-body .reviews .review-small .review1 .tail,
-body .reviews .review-small .review2 .tail,
-body .reviews .review-small .review3 .tail {
-  padding: 30px 30px 30px 30px;
-  background-color: red;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-body .reviews .review-small .review1 .tail h5,
-body .reviews .review-small .review2 .tail h5,
-body .reviews .review-small .review3 .tail h5 {
-  text-align: right;
-}
-
-body .wireless_earphones_common {
-  width: 100%;
-  height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body .wireless_earphones_common .part1,
-body .wireless_earphones_common .part2 {
-  width: 50%;
-  height: 100%;
-}
-
-body .wireless_earphones_common .part1 {
-  background-color: #e40a0a;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .wireless_earphones_common .part1 .info1 {
-  width: 70%;
-  margin: auto;
-}
-
-body .wireless_earphones_common .part1 .info1 img {
-  width: 300px;
-  height: 300px;
-}
-
-body .wireless_earphones_common .part2 {
-  background-color: #363636;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: url(../website-images/backgroung-image-4.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  border-radius: 50%background-colorred;
-}
-
-body .wireless_earphones_common .part2 .info2 {
-  width: 70%;
-}
-
-body .wireless_earphones_common .part2 .info2 .wireless_circle {
-  margin: 40px auto;
-  width: 270px;
-  height: 270px;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .wireless_earphones_common .part2 .info2 .wireless_circle img {
-  height: 130%;
-  width: 130%;
-}
-
 body .powered_by {
   width: 100vw;
   height: 65vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 0 10vw;
   background: url(../website-images/background-image-5.jpg);
   background-attachment: fixed;
   background-size: cover;
-}
-
-body .powered_by .img {
-  width: 50%;
-  height: 100%;
-  padding: 30px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -726,44 +566,14 @@ body .powered_by .img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-body .powered_by .img .i {
-  width: 280px;
-  height: 330px;
-  overflow: visible;
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .powered_by .img .i img {
-  width: 135%;
-  height: 135%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 body .powered_by .content {
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 body .water_resistance {
@@ -777,85 +587,45 @@ body .water_resistance {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 60vh;
+  height: 65vh;
   padding: 20px 10vw;
   background-color: #272525;
-}
-
-body .water_resistance .ib {
-  width: 40%;
-}
-
-body .water_resistance .ib .ii {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .water_resistance .ib .ii img {
-  height: 130%;
-  width: 130%;
 }
 
 body .water_resistance .content {
   padding: 30px;
 }
 
+body .water_resistance .content h1 {
+  text-align: right;
+}
+
+body .water_resistance .content p {
+  text-align: right;
+}
+
 body .one-click {
-  padding: 20px;
-  background-color: grey;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 100vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border-bottom: 12px solid #272525;
+  background-color: #cbcbee;
 }
 
-body .one-click .hey_siri {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 50%;
-  margin-right: 30px;
-  text-align: center;
-}
-
-body .one-click .hey_siri img {
-  height: 80px;
-  width: 80px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-}
-
-body .one-click .one-click-text {
+body .one-click div {
   height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0 20px;
-  border-left: 3px solid white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  border-left: 12px solid #272525;
+  border-right: 12px solid #272525;
+  padding: 25px;
+}
+
+body .one-click div h1 {
+  color: #272525;
 }
 
 body .scroll-top {

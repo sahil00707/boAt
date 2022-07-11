@@ -1,12 +1,12 @@
 <?php  
-
+require_once("db_connect.php");
 //session_start();
 ?>
   
   <div class="n-big">
 <div class="navbar">
         <div class="logo">
-            <h1>bo<span>A</span>t</h1>
+            <h1>bo<span style="font-family: 'Carter One', cursive;">A</span>t</h1>
         </div>
         <ul>
      
@@ -20,9 +20,9 @@
           
       <select name="select_policy" onchange="location = this.value;">
         <option value="">More</option>
-        <option value="gaming.php">About Us</option>
-        <option value="Headphones.php">Privacy Policy</option>
-        <option value="smart-watches.php">Terms & Conditions</option>
+        <option value="about_us.php">About Us</option>
+        <option value="privacy_policy.php">Privacy Policy</option>
+        <option value="terms&conditions.php">Terms & Conditions</option>
       </select>
         
        

@@ -8,7 +8,8 @@
 *::-webkit-scrollbar {
     display: none;
 }
-button,input{
+button,
+input {
     cursor: pointer;
 }
 
@@ -19,11 +20,10 @@ body {
     .carousel-image {
         height: 100vh;
         width: 100vw;
-        background:   url(../website-images/landing-1.jpg) ;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../website-images/landing-1.jpg);
         background-size: cover;
         background-attachment: fixed;
         padding: 15vh 15vw;
- // background-blend-mode: darken;
         .flex {
             display: flex;
             align-items: center;
@@ -33,13 +33,13 @@ body {
             overflow: hidden;
             h1 {
                 font-size: 45px;
-                color: black;
-            
+                color: white;
+
                 span {
                     color: red;
                 }
             }
-      
+
             .border-red {
                 width: 50%;
                 height: 3px;
@@ -49,7 +49,7 @@ body {
             h2 {
                 font-size: 37px;
                 margin: 10px 0;
-                color: black;
+                color: white;
             }
             button {
                 width: 50%;
@@ -204,7 +204,7 @@ body {
             .trending-wireless {
                 width: 90vw;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-evenly;
                 flex-wrap: wrap;
                 max-width: 100vw;
                 margin: 30px auto;
@@ -234,7 +234,22 @@ body {
                             top: 20px;
                             font-weight: bolder;
                             z-index: 10;
-
+                            font-size: 14px;
+                            padding: 5px 15px;
+                            border-top-right-radius: 3px;
+                            border-bottom-right-radius: 3px;
+                        }
+                        .offer-red-light {
+                            width: fit-content;
+                            height: fit-content;
+                            background-color: white;
+                            color: red;
+                            position: absolute;
+                            left: 0;
+                            font-size: 14px;
+                            top: 20px;
+                            font-weight: bolder;
+                            z-index: 10;
                             padding: 5px 15px;
                             border-top-right-radius: 3px;
                             border-bottom-right-radius: 3px;
@@ -244,12 +259,12 @@ body {
                             height: 100%;
                             object-fit: contain;
                             border-radius: 5px;
-                   //         transition: 1s ease;
+                            //         transition: 1s ease;
                         }
                     }
                     .tail {
-                        margin-top: 10px;
                         width: 100%;
+                        height: 48%;
                         height: fit-content;
                         background-color: white;
                         border-radius: 5px;
@@ -286,7 +301,9 @@ body {
                             input {
                                 width: 100%;
                                 padding: 8px 0;
-                                background: linear-gradient(to right,rgb(254, 62, 62),rgb(212, 4, 4));
+
+                                //    background-color: rgb(254,0,0);
+                                background: linear-gradient(to right, rgb(254, 0, 0), rgb(254, 0, 0));
                                 color: white;
                                 border: none;
                                 font-size: medium;
@@ -294,20 +311,21 @@ body {
                                 font-family: "Poppins", sans-serif;
                             }
                         }
-                        .yellow-btn{
-                            input{
-                            background: linear-gradient(to right,rgb(248, 248, 51),rgb(222, 222, 31));
-                            color: black;
-                        }}
+                        .yellow-btn {
+                            input {
+                                background: linear-gradient(to right, rgb(248, 248, 51), rgb(222, 222, 31));
+                                color: black;
+                            }
+                        }
                     }
                 }
                 .card-1:hover {
                     background-color: rgb(123, 123, 234);
-                 //   outline: 1px solid rgb(206, 206, 238);
+                    //   outline: 1px solid rgb(206, 206, 238);
                 }
             }
         }
-    
+
         .what-people-says {
             background-color: rgb(206, 206, 238);
             padding: 5vh 0 0vh 0;
@@ -316,7 +334,7 @@ body {
                 color: black;
                 font-family: "Poppins", sans-serif;
                 span {
-                    color: red;
+                    color: rgb(254, 0, 0);
                     font-family: "Poppins", sans-serif;
                 }
             }
@@ -347,7 +365,7 @@ body {
                     .round-red {
                         height: 320px;
                         width: 320px;
-                        border: 1px solid red;
+                        border: 1px solid rgb(254, 0, 0);
                         border-top-color: transparent;
                         border-bottom-color: transparent;
                         border-radius: 50%;
@@ -379,7 +397,7 @@ body {
                                 border-radius: 5px;
                                 border: 1px solid white;
                                 margin: 20px 0 0 0;
-                                input{
+                                input {
                                     color: red;
                                     background-color: transparent;
                                     border: none;
@@ -391,7 +409,67 @@ body {
                 }
             }
         }
+
+        .boat_blogs {
+            width: 100vw;
+            height: fit-content;
+            background-color: rgb(206, 206, 238);
+            padding: 3vh 4vw;
+            .blogss {
+                height: 80%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                margin: 30px 0;
+            }
+            h1 {
+                text-align: center;
+                color: black;
+                span {
+                    color: red;
+                }
+            }
+            .blog {
+                width: 450px;
+                margin: 15px 5px;
+                //  box-shadow: 0 0 10px grey;
+                border-bottom: 1px solid rgb(123, 123, 234);
+                .head {
+                    height: 200px;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .tail {
+                    height: 55%;
+                    width: 100%;
+                    padding: 30px 0;
+                    p {
+                        color: black;
+                    }
+                    a {
+                        button {
+                            margin: 20px 0 0 0;
+                            padding: 7px 30px;
+                            background-color: red;
+                            color: white;
+                            border: 1px solid red;
+                            transition: 0.3s ease;
+                        }
+                        button:hover {
+                            color: red;
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
         .in-press {
+            padding: 4vh 0;
             h1 {
                 text-align: center;
                 font-family: "Titillium Web", sans-serif;
@@ -401,34 +479,32 @@ body {
                 }
             }
             .quote {
-                max-width: 70vw;
-                margin: 4vh auto;
-                text-align: center;
+                width: 70vw;
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                .img1 {
-                    img {
-                        transform: rotate(180deg);
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+                position: relative;
+                .press-text-div {
+                    background-color: rgb(206, 206, 238);
+                    margin-top: 20px;
+                    //         padding: 25px 0;
+                    min-height: 100px;
+                    border-right: 10px solid red;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p {
+                        color: black;
+                        font-weight: bolder;
                     }
-                }
-                .img {
-                    max-width: 15%;
-                    width: 60px;
-                    img {
-                        width: 100%;
-                    }
-                }
-                p {
-                    font-size: larger;
-                    max-height: 100px;
-                    width: 70%;
                 }
             }
             .press-list {
                 display: flex;
-                justify-content: center;
-                margin: 30px 0;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                margin: 0px 0 15px;
                 .img {
                     width: 150px;
                     height: 150px;
@@ -530,9 +606,8 @@ body {
 @media screen and(max-width:600px ) {
     body {
         .website-content {
-         
             .top-seller {
-                .tab-btns{
+                .tab-btns {
                     width: 80vw;
                 }
                 .top-picks,
@@ -541,11 +616,10 @@ body {
                 .trending-wired,
                 .smart-watches,
                 .trending-wireless {
-                 
                     .card-1 {
                         width: 100%;
                         height: 500px;
-                        .tail{
+                        .tail {
                             margin-top: 12%;
                         }
                     }

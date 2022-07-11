@@ -1,8 +1,3 @@
 cart-bug
-blogs
-responsive ness
 paytm 
 product page 3 sections content
-reviews api
-discount
-carousel

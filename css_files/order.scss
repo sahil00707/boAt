@@ -6,7 +6,7 @@ font-family: "Poppins", sans-serif;
 
 }
 body{
-    background-color: rgb(255, 114, 114);
+    background: linear-gradient(to right,blue,rgb(90, 90, 249));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,48 +15,54 @@ body{
     .center{
         width: 450px;
         height: fit-content;
-        background-color: white;
         padding: 20px;
         border-radius: 5px;
-        box-shadow: 0 0 18px rgb(216, 8, 8);
+    //    box-shadow: 0 0 18px rgb(216, 8, 8);
         
             h3{
                 text-align: center;
-                background-color: red;
-                border-bottom: 2px solid red;
                 color: white;
                 padding: 10px ;
             }
             input{
                 width: 100%;
-                border: 1px solid gray;
+                border: 2px solid white;
                 padding: 10px ;
                 background-color: transparent;
+    
                 margin: 10px 0;
                 border-radius: 5px;
+                color: white;
+            }
+            input::placeholder{
+                color: white;
             }
             input[type="submit"]{
-                background-color: red;
-                color: white;
-                border: 2px solid red;
+                background-color: white;
+                color: blue;
+                border: 2px solid white;
                 font-weight: bolder;
             }
             input:focus{
-                outline: 2px solid red;
+                outline: 2px solid white;
                 border-color: transparent;
             }
             span{
                 display: flex;
+                h4{
+                    color: white;
+                }
                 p{
                     margin-left: 5px;
+                    color: white;
                 }
             }
             a{
                 button{
                     width: 100%;
                     padding: 10px;
-                    border: 2px solid red;
-                    color: red;
+                    border: 2px solid white;
+                    color: white;
                     background-color: transparent;
                     font-weight: bolder;
                     border-radius: 5px;

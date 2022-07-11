@@ -50,6 +50,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -64,10 +67,12 @@
   height: 380px;
   background-color: #ceceee;
   border-radius: 10px;
+  margin: 0 15px;
+  margin-bottom: 35px;
   position: relative;
-  margin-right: 30px;
-  margin-bottom: 30px;
   padding: 11px;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
 }
 
 .gaming-section-all .top-picks .card-1 .head {
@@ -89,6 +94,27 @@
   top: 20px;
   font-weight: bolder;
   z-index: 10;
+  font-size: 14px;
+  padding: 5px 15px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.gaming-section-all .top-picks .card-1 .head .offer-red-light {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  color: red;
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  top: 20px;
+  font-weight: bolder;
+  z-index: 10;
   padding: 5px 15px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -103,8 +129,8 @@
 }
 
 .gaming-section-all .top-picks .card-1 .tail {
-  margin-top: 10px;
   width: 100%;
+  height: 48%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -153,11 +179,22 @@
 .gaming-section-all .top-picks .card-1 .tail .order-btn input {
   width: 100%;
   padding: 8px 0;
-  background-color: red;
+  background: -webkit-gradient(linear, left top, right top, from(#fe0000), to(#fe0000));
+  background: linear-gradient(to right, #fe0000, #fe0000);
   color: white;
   border: none;
   font-size: medium;
   font-weight: bolder;
   font-family: "Poppins", sans-serif;
+}
+
+.gaming-section-all .top-picks .card-1 .tail .yellow-btn input {
+  background: -webkit-gradient(linear, left top, right top, from(#f8f833), to(#dede1f));
+  background: linear-gradient(to right, #f8f833, #dede1f);
+  color: black;
+}
+
+.gaming-section-all .top-picks .card-1:hover {
+  background-color: #7b7bea;
 }
 /*# sourceMappingURL=all-products.css.map */

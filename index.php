@@ -1,5 +1,6 @@
 <?php 
 session_start();
+require_once("db_connect.php");
 //$_SESSION["my_cart"] = array_values($_SESSION["my_cart"]);
 
 ?>
@@ -10,7 +11,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="icon" href="website-icons/headphone.png">
+    <link rel="icon" href="website-icons/website-logo-icons/musical-note.png">
      <?php
      include "common-links.php";
      ?>
@@ -80,7 +81,7 @@ require_once("common_files/navbar.php");
             <div class="top-picks">
                 <div class="card-1">
                     <div class="head">
-                        <div class="offer-red">New Arrival</div>
+                        <div class="offer-red-light">You Save 60%</div>
                         <img src="website-images/headphones/ANC/boat-airdopes-411-anc-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
@@ -101,7 +102,7 @@ require_once("common_files/navbar.php");
                 </div>
                 <div class="card-1">
                     <div class="head">
-                        <div class="offer-red">New Arrival</div>
+                    <div class="offer-red-light">You Save 35%</div>
                         <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
@@ -122,7 +123,7 @@ require_once("common_files/navbar.php");
                 </div>
                 <div class="card-1">
                     <div class="head">
-                        <div class="offer-red">New Arrival</div>
+                    <div class="offer-red-light">You Save 65%</div>
                         <img src="website-images/headphones/wired/boat-bassheads-102-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
@@ -143,8 +144,8 @@ require_once("common_files/navbar.php");
                 </div>
                 <div class="card-1">
                     <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-333-1.webp" alt="" class="p-imgg">
+                    <div class="offer-red-light">You Save 70%</div>
+                    <img src="website-images/headphones/wireless/boAt-rockers-333-1.webp" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
                         <h4>boAt Rockers 333</h4>
@@ -164,90 +165,32 @@ require_once("common_files/navbar.php");
                 </div>
             </div>
             <div class="watches">
+            <?php 
+            $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation WHERE `product-category`='Smart Watch'");
+            while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
+            ?>
                 <div class="card-1">
                     <div class="head">
-                        <div class="offer-red">New Arrival </div>
-                        <img src="website-images/smart-watches/boat-storm-1.webp" alt="" class="p-imgg">
+                    <div class="offer-red-light">You Save <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
+                        <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
-                        <h4>boAt Storm</h4>
+                        <h4><?php  echo $smart_watch['product-name']?></h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 2499/- <span>Rs.5999</span></h4>
-                            <p>save : 3500/-</p>
+                            <h5>Rs. <?php  echo $smart_watch['product-price']?>/- <span>Rs.<?php  echo $smart_watch['product-dashed-price']?></span></h4>
+                            <p>save : <?php  echo $smart_watch['product-dashed-price']-$smart_watch['product-price']?>/-</p>
 
                         </div>
                         <div class="order-btn">
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt  Storm">
+    <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
 </form>
                         </div>
                     </div>
                 </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-flash-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Watch Flash</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 2290/- <span>Rs.6990</span></h4>
-                            <p>save : 4700/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt  Watch Flash">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-iris-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Watch Iris</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 4399/- <span>Rs.11249</span></h4>
-                            <p>save : 6860/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Watch Iris">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-wave-pro-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Watch Wave Pro</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 3299/- <span>Rs.5999</span></h4>
-                            <p>save : 2700/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt  Watch Wave Pro">
-</form>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
         </div>
 
@@ -264,93 +207,35 @@ require_once("common_files/navbar.php");
 
         
         <div class="top-seller">
-            <h1>Deals <span>O</span>f The Day</h1>
+            <h1>Deals <span  style="color:yellow">O</span>f The Day</h1>
      
             <div class="trending-wireless">
+            <?php 
+            $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation WHERE `product-category`='Dod'");
+            while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
+            ?>
                 <div class="card-1">
                     <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/deals-of-the-day/boAt-BassHeads-100-1.webp" alt="" class="p-imgg">
+                    <div class="offer-red-light">You Save  <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
+                        <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
-                        <h4>boAt BassHeads 100</h4>
+                        <h4><?php  echo $smart_watch['product-name']?></h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 299/- <span>Rs.999</span></h4>
-                            <p>save : 600/-</p>
+                            <h5>Rs. <?php  echo $smart_watch['product-price']?>/- <span>Rs.<?php  echo $smart_watch['product-dashed-price']?></span></h4>
+                            <p>save : <?php  echo $smart_watch['product-dashed-price']-$smart_watch['product-price']?>/-</p>
 
                         </div>
                         <div class="order-btn yellow-btn">
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 100">
+    <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
 </form>
                         </div>
                     </div>
                 </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/deals-of-the-day/boAt-rockers-518-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Rockers 518</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 999/- <span>Rs.3990</span></h4>
-                            <p>save : 2990/-</p>
-
-                        </div>
-                        <div class="order-btn yellow-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Rockers 518">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/deals-of-the-day/boAt-rockers-400-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Rockers 400</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 899/- <span>Rs.2990</span></h4>
-                            <p>save : 2091/-</p>
-
-                        </div>
-                        <div class="order-btn yellow-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Rockers 400">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/deals-of-the-day/boAt-stone-granade-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Stone Granade</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 999/- <span>Rs.3990</span></h4>
-                            <p>save : 2991/-</p>
-
-                        </div>
-                        <div class="order-btn yellow-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Stone Granade">
-</form>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
      
         </div>
@@ -371,93 +256,32 @@ require_once("common_files/navbar.php");
             <h1><span>G</span>aming</h1>
      
             <div class="gaming">
+            <?php 
+            $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation WHERE `product-category`='gaming'");
+            while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
+            ?>
                 <div class="card-1">
                     <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/gaming/boat-immortal-1000d-1.webp" alt="" class="p-imgg">
+                    <div class="offer-red-light">You Save  <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
+                        <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
-                        <h4>boAt Immortal 1000d</h4>
+                        <h4><?php  echo $smart_watch['product-name']?></h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 2299/- <span>Rs.5999</span></h4>
-                            <p>save : 3700/-</p>
+                            <h5>Rs. <?php  echo $smart_watch['product-price']?>/- <span>Rs.<?php  echo $smart_watch['product-dashed-price']?></span></h4>
+                            <p>save : <?php  echo $smart_watch['product-dashed-price']-$smart_watch['product-price']?>/-</p>
 
                         </div>
                         <div class="order-btn">
-<form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Immortal 1000d">
-</form>
-                    </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/gaming/boat-immortal-1300-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Immortal 1300</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 3499/- <span>Rs.9990</span></h4>
-                            <p>save : 6491/-</p>
-
-                        </div>
-                        <div class="order-btn">
-
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Immortal 1300">
+    <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
 </form>
                         </div>
                     </div>
                 </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/gaming/boat-immortal-400-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Immortal 400</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 1999/- <span>Rs.6999</span></h4>
-                            <p>save : 5000/-</p>
-
-                        </div>
-                        <div class="order-btn">
-
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Immortal 400">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/gaming/boat-immortal-700-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Immortal 700</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 2499/- <span>Rs.6990</span></h4>
-                            <p>save : 1999/-</p>
-
-                        </div>
-                        <div class="order-btn">
-
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Immortal 700">
-</form>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
      
         </div>
@@ -482,93 +306,32 @@ require_once("common_files/navbar.php");
             <h1>Smart <span>W</span>atches</h1>
      
             <div class="smart-watches">
+            <?php 
+            $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation WHERE `product-category`='Smart Watch'");
+            while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
+            ?>
                 <div class="card-1">
                     <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-storm-1.webp" alt="" class="p-imgg">
+                    <div class="offer-red-light">You Save  <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
+                        <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
-                        <h4>boAt Storm</h4>
+                        <h4><?php  echo $smart_watch['product-name']?></h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 2499/- <span>Rs.5999</span></h4>
-                            <p>save : 2500/-</p>
+                            <h5>Rs. <?php  echo $smart_watch['product-price']?>/- <span>Rs.<?php  echo $smart_watch['product-dashed-price']?></span></h4>
+                            <p>save : <?php  echo $smart_watch['product-dashed-price']-$smart_watch['product-price']?>/-</p>
 
                         </div>
                         <div class="order-btn">
-                       
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original" >
-    <input type="hidden" name="product-hidden-name" value="boAt Storm">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-flash-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Watch Flash</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 2290/- <span>Rs.6990</span></h4>
-                            <p>save : 4900/-</p>
-
-                        </div>
-                        <div class="order-btn">      
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Watch Flash">
+    <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
 </form>
                         </div>
                     </div>
                 </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-iris-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Watch Iris</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 4399/- <span>Rs.11249</span></h4>
-                            <p>save : 6461/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                     
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Watch Iris">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/smart-watches/boat-watch-wave-pro-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Watch Wave Pro</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 3299/- <span>Rs.6999</span></h4>
-                            <p>save : 3700/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                      
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Watch Wave Pro">
-</form>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
      
         </div>
@@ -589,90 +352,32 @@ require_once("common_files/navbar.php");
             <h1>Trending <span>W</span>ired</h1>
      
             <div class="trending-wired">
+            <?php 
+            $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation WHERE `product-category`='Wired'");
+            while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
+            ?>
                 <div class="card-1">
                     <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-102-1.webp" alt="" class="p-imgg">
+                    <div class="offer-red-light">You Save  <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
+                        <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
-                        <h4>boAt BassHeads 102</h4>
+                        <h4><?php  echo $smart_watch['product-name']?></h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 349/- <span>Rs.1299</span></h4>
-                            <p>save : 950/-</p>
+                            <h5>Rs. <?php  echo $smart_watch['product-price']?>/- <span>Rs.<?php  echo $smart_watch['product-dashed-price']?></span></h4>
+                            <p>save : <?php  echo $smart_watch['product-dashed-price']-$smart_watch['product-price']?>/-</p>
 
                         </div>
                         <div class="order-btn">
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 102">
+    <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
 </form>
                         </div>
                     </div>
                 </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-103-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt BassHeads 103</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 499/- <span>Rs.1299</span></h4>
-                            <p>save : 800/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt BassHeads 103">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-104-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt BassHeads 104</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 399/- <span>Rs.999</span></h4>
-                            <p>save : 600/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Bassheads 104">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wired/boat-bassheads-242-2.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt BassHeads 242</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 499/- <span>Rs.1499</span></h4>
-                            <p>save : 1000/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Bassheads 242">
-</form>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
      
         </div>
@@ -693,90 +398,32 @@ require_once("common_files/navbar.php");
             <h1>Trending <span>W</span>ireless</h1>
      
             <div class="trending-wireless">
+            <?php 
+            $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation WHERE `product-category`='Wireless'");
+            while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
+            ?>
                 <div class="card-1">
                     <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="" class="p-imgg">
+                    <div class="offer-red-light">You Save  <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
+                        <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
-                        <h4>boAt Rockers 235 Pro</h4>
+                        <h4><?php  echo $smart_watch['product-name']?></h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1299/- <span>Rs.1999</span></h4>
-                            <p>save : 600/-</p>
+                            <h5>Rs. <?php  echo $smart_watch['product-price']?>/- <span>Rs.<?php  echo $smart_watch['product-dashed-price']?></span></h4>
+                            <p>save : <?php  echo $smart_watch['product-dashed-price']-$smart_watch['product-price']?>/-</p>
 
                         </div>
                         <div class="order-btn">
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Rockers 235 Pro">
+    <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
 </form>
                         </div>
                     </div>
                 </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-255-pro-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Rockers 255 Pro</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 1499/- <span>Rs.3499</span></h4>
-                            <p>save : 2000/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Rockers 255 Pro">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-333-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Rockers 333 </h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 1499/- <span>Rs.4999</span></h4>
-                            <p>save : 3500/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Rockers 333">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/wireless/boAt-rockers-333-pro-2.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Rockers 333 Pro</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 1799/- <span>Rs.2999</span></h4>
-                            <p>save : 1200/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Rockers 333 Pro">
-</form>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
      
         </div>
@@ -876,97 +523,82 @@ require_once("common_files/navbar.php");
             <h1>Trending <span>A</span>irdopes</h1>
      
             <div class="trending-wireless">
+            <?php 
+            $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation WHERE `product-category`='ANC'");
+            while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
+            ?>
                 <div class="card-1">
                     <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/ANC/boAt-airdopes-411-anc-1.webp" alt="" class="p-imgg">
+                    <div class="offer-red-light">You Save  <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
+                        <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
-                        <h4>boAt Airdopes 411 ANC</h4>
+                        <h4><?php  echo $smart_watch['product-name']?></h4>
                         <div class="border"></div>
                         <div class="price">
-                            <h5>Rs. 1999/- <span>Rs.4999</span></h4>
-                            <p>save : 3000/-</p>
+                            <h5>Rs. <?php  echo $smart_watch['product-price']?>/- <span>Rs.<?php  echo $smart_watch['product-dashed-price']?></span></h4>
+                            <p>save : <?php  echo $smart_watch['product-dashed-price']-$smart_watch['product-price']?>/-</p>
 
                         </div>
                         <div class="order-btn">
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Airdopes 411 ANC">
+    <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
 </form>
                         </div>
                     </div>
                 </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/ANC/boAt-airdopes-500-anc-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Airdopes 500 ANC</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 4990/- <span>Rs.9990</span></h4>
-                            <p>save : 5000/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Airdopes 500 ANC">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/ANC/boAt-airdopes-501-anc-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Airdopes 501 ANC</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 3999/- <span>Rs.9999</span></h4>
-                            <p>save : 5990/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Airdopes 501 ANC">
-</form>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-1">
-                    <div class="head">
-                        <div class="offer-red">New Arrival</div>
-                        <img src="website-images/headphones/ANC/boAt-airdopes-601-anc-1.webp" alt="" class="p-imgg">
-                    </div>
-                    <div class="tail">
-                        <h4>boAt Airdopes 601 ANC</h4>
-                        <div class="border"></div>
-                        <div class="price">
-                            <h5>Rs. 3999/- <span>Rs.9990</span></h4>
-                            <p>save : 5990/-</p>
-
-                        </div>
-                        <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
-    <input type="hidden" name="product-hidden-name" value="boAt Airdopes 601 ANC">
-</form>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
      
         </div>
 
 
+<!--boat Blogs-->
+<div class="boat_blogs">
+<h1>Our <span>B</span>logs</h1>
+<div class="blogss">
 
 
+<div class="blog">
+    <div class="head">
+        <img src="website-images/blog-1.webp" alt="">
+    </div>
+    <div class="tail">
+        <p>Earphones Buying Guide - Everything You Need To Know</p>
+        <a href="#"><button>Explore More</button></a>
+    </div>
+</div>
+
+
+
+<div class="blog">
+    <div class="head">
+        <img src="website-images/blog-2.webp" alt="">
+    </div>
+    <div class="tail">
+        <p>The Ultimate Smartwatch Guide - Get The World On Your Wrist</p>
+        <a href="#"><button>Explore More</button></a>
+
+    </div>
+</div>
+
+<div class="blog">
+    <div class="head">
+        <img src="website-images/blog-3.webp" alt="">
+    </div>
+    <div class="tail">
+        <p>The Best Calling Smartwatch: boAt Primia or boAt Wave Connect</p>
+        <a href="#"><button>Explore More</button></a>
+
+    </div>
+</div>
+</div>
+</div>
+
+
+
+<!--boat Blogs-->
 
 
 
@@ -978,13 +610,11 @@ require_once("common_files/navbar.php");
         <div class="in-press">
             <h1>In the <span>P</span>ress</h1>
             <div class="quote">
-                <div class="img img1">
-                    <img src="website-icons/quote.png" alt="">
-                </div>
-                <p class="press-text">Warburg invests $100 mn in boAt</p>
-                <div class="img">
-                    <img src="website-icons/quote.png" alt="">
-                </div>
+             <div class="press-text-div">
+             <p class="press-text">Warburg invests $100 mn in boAt</p>
+             </div>
+                
+             
             </div>
             <div class="press-list">
                 <button class="img press-list-img" value="Warburg invests $100 mn in boAt">

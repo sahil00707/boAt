@@ -71,6 +71,18 @@ $(document).ready(
                 );
             }
         );
+
+        setInterval(carousel,5000);
+        var carousel_index=0;
+        function carousel(){
+            var src_carousel=$(".carousel-image ");
+      carousel_index++;
+      if(carousel_index>3)carousel_index=1;
+            $(".carousel-image ").css("background-image", ` linear-gradient(
+                rgba(0, 0, 0, 0.7), 
+                rgba(0, 0, 0, 0.7)
+              ),  url(website-images/landing-${carousel_index}.jpg)`);
+        }
         $(".p-imgg").mouseenter(function () {
             var imgg = $(this).attr("src");
             var x = imgg.replace("-1.", "-2.");
@@ -81,16 +93,16 @@ $(document).ready(
             var x = imgg.replace("-2.", "-1.");
             $(this).attr("src", x);
         });
-      $(".icons-1").mouseenter(function(){
-    var x= $(this).children("div").children("img").attr("src");
-    var p= x.replace("white","black");
-    $(this).children("div").children("img").attr("src",p);
-      }); 
-      $(".icons-1").mouseleave(function(){
-        var x= $(this).children("div").children("img").attr("src");
-        var p= x.replace("black","white");
-        $(this).children("div").children("img").attr("src",p);
-      }); 
+        $(".icons-1").mouseenter(function () {
+            var x = $(this).children("div").children("img").attr("src");
+            var p = x.replace("white", "black");
+            $(this).children("div").children("img").attr("src", p);
+        });
+        $(".icons-1").mouseleave(function () {
+            var x = $(this).children("div").children("img").attr("src");
+            var p = x.replace("black", "white");
+            $(this).children("div").children("img").attr("src", p);
+        });
 
 
     }

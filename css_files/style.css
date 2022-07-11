@@ -11,7 +11,8 @@
   display: none;
 }
 
-button, input {
+button,
+input {
   cursor: pointer;
 }
 
@@ -26,7 +27,8 @@ body {
 body .carousel-image {
   height: 100vh;
   width: 100vw;
-  background: url(../website-images/landing-1.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../website-images/landing-1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../website-images/landing-1.jpg);
   background-size: cover;
   background-attachment: fixed;
   padding: 15vh 15vw;
@@ -49,7 +51,7 @@ body .carousel-image .flex {
 
 body .carousel-image .flex h1 {
   font-size: 45px;
-  color: black;
+  color: white;
 }
 
 body .carousel-image .flex h1 span {
@@ -66,7 +68,7 @@ body .carousel-image .flex .border-red {
 body .carousel-image .flex h2 {
   font-size: 37px;
   margin: 10px 0;
-  color: black;
+  color: white;
 }
 
 body .carousel-image .flex button {
@@ -261,9 +263,9 @@ body .website-content .top-seller .trending-wireless {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 100vw;
@@ -318,6 +320,32 @@ body .website-content .top-seller .trending-wireless .card-1 .head .offer-red {
   top: 20px;
   font-weight: bolder;
   z-index: 10;
+  font-size: 14px;
+  padding: 5px 15px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+body .website-content .top-seller .top-picks .card-1 .head .offer-red-light,
+body .website-content .top-seller .watches .card-1 .head .offer-red-light,
+body .website-content .top-seller .gaming .card-1 .head .offer-red-light,
+body .website-content .top-seller .trending-wired .card-1 .head .offer-red-light,
+body .website-content .top-seller .smart-watches .card-1 .head .offer-red-light,
+body .website-content .top-seller .trending-wireless .card-1 .head .offer-red-light {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  color: red;
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  top: 20px;
+  font-weight: bolder;
+  z-index: 10;
   padding: 5px 15px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -342,8 +370,8 @@ body .website-content .top-seller .gaming .card-1 .tail,
 body .website-content .top-seller .trending-wired .card-1 .tail,
 body .website-content .top-seller .smart-watches .card-1 .tail,
 body .website-content .top-seller .trending-wireless .card-1 .tail {
-  margin-top: 10px;
   width: 100%;
+  height: 48%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -432,8 +460,8 @@ body .website-content .top-seller .smart-watches .card-1 .tail .order-btn input,
 body .website-content .top-seller .trending-wireless .card-1 .tail .order-btn input {
   width: 100%;
   padding: 8px 0;
-  background: -webkit-gradient(linear, left top, right top, from(#fe3e3e), to(#d40404));
-  background: linear-gradient(to right, #fe3e3e, #d40404);
+  background: -webkit-gradient(linear, left top, right top, from(#fe0000), to(#fe0000));
+  background: linear-gradient(to right, #fe0000, #fe0000);
   color: white;
   border: none;
   font-size: medium;
@@ -473,7 +501,7 @@ body .website-content .what-people-says h1 {
 }
 
 body .website-content .what-people-says h1 span {
-  color: red;
+  color: #fe0000;
   font-family: "Poppins", sans-serif;
 }
 
@@ -514,7 +542,7 @@ body .website-content .what-people-says .reviews-x .review .head img {
 body .website-content .what-people-says .reviews-x .review .round-red {
   height: 320px;
   width: 320px;
-  border: 1px solid red;
+  border: 1px solid #fe0000;
   border-top-color: transparent;
   border-bottom-color: transparent;
   border-radius: 50%;
@@ -564,6 +592,87 @@ body .website-content .what-people-says .reviews-x .review .tail .tt button inpu
   font-weight: bolder;
 }
 
+body .website-content .boat_blogs {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #ceceee;
+  padding: 3vh 4vw;
+}
+
+body .website-content .boat_blogs .blogss {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0;
+}
+
+body .website-content .boat_blogs h1 {
+  text-align: center;
+  color: black;
+}
+
+body .website-content .boat_blogs h1 span {
+  color: red;
+}
+
+body .website-content .boat_blogs .blog {
+  width: 450px;
+  margin: 15px 5px;
+  border-bottom: 1px solid #7b7bea;
+}
+
+body .website-content .boat_blogs .blog .head {
+  height: 200px;
+  width: 100%;
+}
+
+body .website-content .boat_blogs .blog .head img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .website-content .boat_blogs .blog .tail {
+  height: 55%;
+  width: 100%;
+  padding: 30px 0;
+}
+
+body .website-content .boat_blogs .blog .tail p {
+  color: black;
+}
+
+body .website-content .boat_blogs .blog .tail a button {
+  margin: 20px 0 0 0;
+  padding: 7px 30px;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+body .website-content .boat_blogs .blog .tail a button:hover {
+  color: red;
+  background-color: transparent;
+}
+
+body .website-content .in-press {
+  padding: 4vh 0;
+}
+
 body .website-content .in-press h1 {
   text-align: center;
   font-family: "Titillium Web", sans-serif;
@@ -575,48 +684,50 @@ body .website-content .in-press h1 span {
 }
 
 body .website-content .in-press .quote {
-  max-width: 70vw;
-  margin: 4vh auto;
-  text-align: center;
+  width: 70vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+body .website-content .in-press .quote .press-text-div {
+  background-color: #ceceee;
+  margin-top: 20px;
+  min-height: 100px;
+  border-right: 10px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body .website-content .in-press .quote .img1 img {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-body .website-content .in-press .quote .img {
-  max-width: 15%;
-  width: 60px;
-}
-
-body .website-content .in-press .quote .img img {
-  width: 100%;
-}
-
-body .website-content .in-press .quote p {
-  font-size: larger;
-  max-height: 100px;
-  width: 70%;
+body .website-content .in-press .quote .press-text-div p {
+  color: black;
+  font-weight: bolder;
 }
 
 body .website-content .in-press .press-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 30px 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px 0 15px;
 }
 
 body .website-content .in-press .press-list .img {
