@@ -110,6 +110,7 @@
         div {
             text-align: center;
             margin: 10px 40px;
+            
             .img {
                 width: 70px;
                 height: 70px;
@@ -165,28 +166,34 @@
                     color: red;
                 }
             }
-            .form-subscribe {
+            p{
+                font-size: 14px;
+                margin-bottom: 3px;
+            }           
+             .form-subscribe {
                 border: 1px solid rgb(78, 78, 78);
                 display: flex;
                 align-items: center;
                 padding: 10px;
                 form {
-                    input {
+                    .iii {
                         width: 20vw;
                         border: none;
                         background-color: transparent;
                     }
-                    input:focus {
+                    .iii:focus {
                         outline: none;
                     }
+                    button{
+                        background-color: red;
+                        padding: 7px 30px;
+                        background-color: red;
+                        color: white;
+                        font-weight: bolder;
+                        border: 1px solid red;
+                    }
                 }
-                button {
-                    padding: 7px 30px;
-                    background-color: red;
-                    color: white;
-                    font-weight: bolder;
-                    border: 1px solid red;
-                }
+              
             }
         }
         .f-2 {

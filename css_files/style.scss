@@ -32,6 +32,7 @@ body {
             height: 100%;
             overflow: hidden;
             h1 {
+                
                 font-size: 45px;
                 color: white;
 
@@ -325,6 +326,69 @@ body {
                 }
             }
         }
+        .new-launches {
+            width: 100vw;
+            height: 70vh;
+            padding: 5vh 10vw;
+            .product {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                border-radius: 10px;
+                .image {
+                    width: 50%;
+                    height: 100%;
+                    background-color: rgb(206, 206, 238);
+                    border-radius: 10px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        border-radius: 10px;
+                    }
+                }
+                .content {
+                    width: 50%;
+                    height: 100%;
+                    background-color: white;
+                    text-align: center;
+                    border-radius: 10px;
+                    p {
+                        color: rgb(77, 76, 76);
+                        width: fit-content;
+                        margin: 15px auto;
+                        padding: 5px 10px;
+                        border-bottom: 1px solid red;
+                    }
+                    h3 {
+                        color: black;
+                    }
+                    .special-launch-price {
+                        h4 {
+                            color: white;
+                            background-color: red;
+                            border: 1px solid red;
+                            padding: 7px 10px;
+                            width: fit-content;
+                            margin: 10px auto;
+                        }
+                    }
+                    .know-more {
+                        margin: 20px 0;
+                        a {
+                            text-decoration: none;
+                            button {
+                                padding: 7px 30px;
+                                background-color: transparent;
+                                border: 2px solid red;
+                                color: red;
+                                font-weight: bolder;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         .what-people-says {
             background-color: rgb(206, 206, 238);
@@ -438,12 +502,16 @@ body {
                 .head {
                     height: 200px;
                     width: 100%;
+                    transition: 0.2s ease;
+
                     img {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                        transition: 0.2s ease;
                     }
                 }
+         
                 .tail {
                     height: 55%;
                     width: 100%;
@@ -466,6 +534,9 @@ body {
                         }
                     }
                 }
+            }
+            .blog:hover{
+                box-shadow: 0 10px  0px rgb(123, 123, 234);
             }
         }
         .in-press {

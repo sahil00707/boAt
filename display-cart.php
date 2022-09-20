@@ -25,6 +25,8 @@ if(isset($_SESSION['my_cart'])){
                                 </div>
     
                             </div> -->
+                            <p><span>Quantity -</span> <?php  echo $row['product_quantity']?></p>
+
                             <div class="remove">
                                 <button  class="remove-btns" id="<?php echo $row['cart_index']?>" >Remove</button>
                             </div>

@@ -83,45 +83,15 @@
                 }
             }
             .quantity-remove {
-                display: flex;
-                align-items: center;
-                margin: 5px 0;
+                margin: 0px 0;
             }
-            .quantity {
-                margin: 20px 0;
-                display: flex;
-                align-items: center;
-                width: 50%;
-                .select-quantity {
-                    display: flex;
-                    width: 90px;
-                    justify-content: space-between;
-                    align-items: center;
-                    border: 2.5px solid rgb(175, 175, 175);
-                    border-radius: 5px;
-                    padding: 5px;
-                    .img {
-                        width: 40%;
-                        height: 100%;
-                        background-color: transparent;
-                        border: none;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        img {
-                            width: 50%;
-                            height: 50%;
-                            object-fit: contain;
-                        }
-                    }
-                    .quantity-text {
-                        h4 {
-                            color: black;
-                        }
-                    }
-                }
-                p {
-                    margin-left: 5px;
+         
+            p{
+                color: black;
+                text-align: left;
+                margin-bottom: 10px;
+                span{
+                    font-weight: bolder;
                     color: black;
                 }
             }
@@ -190,7 +160,7 @@
     }
 }
 
-@media screen and(max-width:600px) {
+@media screen and(max-width:400px) {
     .my-cart {
         width: 100vw;
         right: -100vw;

@@ -79,7 +79,8 @@ require_once("common_files/navbar.php");
                 <div class="btn2"><button class="tab-btn-2">Smart Watches</button></div>
             </div>
             <div class="top-picks">
-                <div class="card-1">
+            <form action="product.php" id="order-form" method="POST">
+                <button class="card-1" type="submit" name="order-btn-original" >
                     <div class="head">
                         <div class="offer-red-light">You Save 60%</div>
                         <img src="website-images/headphones/ANC/boat-airdopes-411-anc-1.webp" alt="" class="p-imgg">
@@ -93,14 +94,25 @@ require_once("common_files/navbar.php");
 
                         </div>
                         <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
-    <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
+                   
+    <input type="submit" value="Order Now" id="order-btn-original"  name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="boAt Airdopes 411 ANC">
-</form>
+    
+    <input type="hidden" name="product-hidden-image" value="website-images/headphones/ANC/boat-airdopes-411-anc-1.webp">
+    <input type="hidden" name="product-hidden-price" value="1999">
+    <input type="hidden" name="product-hidden-category" value="ANC">
+    <input type="hidden" name="product-hidden-dashed-price" value="4999">
+    <input type="hidden" name="product-hidden-image-2" value="website-images/headphones/ANC/boat-airdopes-411-anc-2.webp">
+    <input type="hidden" name="product-hidden-description" value="Choose music, not noise with Airdopes 411 ANC by suppressing noise up to 25dB with Active Noise Cancellation. Experience a smooth calling experience like no other with ENx™ Technology. Indulge in the immersive sound from boAt powered by its 10mm Drivers. Groove for as long as you want with a massive 17.5 hours of total playback time. Never run out of juice as you enjoy your playlist with its ASAPTM Charge that gets you 60 minutes of performance with just 10 minutes of charge. Just plug in and listen to the #SoundThatMatters!">
+    
+
                         </div>
                     </div>
-                </div>
-                <div class="card-1">
+</button>
+</form>
+<form action="product.php" id="order-form" method="POST">
+
+                <button class="card-1"  name="order-btn-original">
                     <div class="head">
                     <div class="offer-red-light">You Save 35%</div>
                         <img src="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp" alt="" class="p-imgg">
@@ -114,14 +126,23 @@ require_once("common_files/navbar.php");
 
                         </div>
                         <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="boAt Rockers 235 Pro">
-</form>
+    
+    <input type="hidden" name="product-hidden-image" value="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp">
+    <input type="hidden" name="product-hidden-price" value="1299">
+    <input type="hidden" name="product-hidden-category" value="Wireless Earphones">
+    <input type="hidden" name="product-hidden-dashed-price" value="1999">
+    <input type="hidden" name="product-hidden-image-2" value="website-images/headphones/wireless/boAt-rockers-235-pro-2.webp">
+    <input type="hidden" name="product-hidden-description" value="Let Rockerz 235 Pro fuel your passion like a pro. Take your hustle up a notch as its up to 20 HRS playback will keep you pumped up throughout. The BEAST™ Mode and its low latency will make you experience the best of both worlds. #UnravelYourFlow as you get maximum call clarity with ENx™ Technology equipped mics. Work hard & play harder with Rockerz 235 Pro empowering both your worlds.">
+    
                         </div>
                     </div>
-                </div>
-                <div class="card-1">
+</button>
+                </form>
+                <form action="product.php" id="order-form" method="POST">
+
+                <button class="card-1"  name="order-btn-original" type="submit">
                     <div class="head">
                     <div class="offer-red-light">You Save 65%</div>
                         <img src="website-images/headphones/wired/boat-bassheads-102-1.webp" alt="" class="p-imgg">
@@ -135,14 +156,23 @@ require_once("common_files/navbar.php");
 
                         </div>
                         <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="boAt BassHeads 102">
-</form>
+    
+    <input type="hidden" name="product-hidden-image" value="website-images/headphones/wired/boat-bassheads-102-1.webp">
+    <input type="hidden" name="product-hidden-price" value="349">
+    <input type="hidden" name="product-hidden-category" value="Wired Earphones">
+    <input type="hidden" name="product-hidden-dashed-price" value="1299">
+    <input type="hidden" name="product-hidden-image-2" value="website-images/headphones/wired/boat-bassheads-102-2.webp">
+    <input type="hidden" name="product-hidden-description" value="Set the vibes going with the boAt TRebel Bassheads 102’s immersive audio. Styled with 8mm inbuilt drivers, get ready to sink into your surroundings. Emphatic bass keeps the beat apace as your favourite tracks bring you to life. Plug into Nirvana and get going. Carry your style comfortably with tangle free wires keeping it simple, and sail to the shores of good fashion. Set with a 120cm cable and 3.5 mm jack, connect into your music and movies anytime and anyplace. Stay in the good grace of perfect sound, go gaga with the TRebel Bassheads 102 wired earphones.">
+    
                         </div>
                     </div>
-                </div>
-                <div class="card-1">
+</button>
+                </form>
+                <form action="product.php" id="order-form" method="POST">
+
+                <button class="card-1"  name="order-btn-original" type="submit">
                     <div class="head">
                     <div class="offer-red-light">You Save 70%</div>
                     <img src="website-images/headphones/wireless/boAt-rockers-333-1.webp" alt="" class="p-imgg">
@@ -159,17 +189,28 @@ require_once("common_files/navbar.php");
                         <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="boAt Rockers 333">
-</form>
+    
+    <input type="hidden" name="product-hidden-image" value="website-images/headphones/wireless/boAt-rockers-333-1.webp">
+    <input type="hidden" name="product-hidden-price" value="1499">
+    <input type="hidden" name="product-hidden-category" value="Wireless Earphones">
+    <input type="hidden" name="product-hidden-dashed-price" value="4999">
+
+    <input type="hidden" name="product-hidden-description" value="This is for the unapologetically rebellious Queens who stop at nothing. Speak your unique style with Rockerz 333 - a bold and powerful wireless earphones for the part of you that wants more. More of sound, more of style, and more of power. Immerse into your jam with boAt Signature Sound and 30 HRS of non stop playback. Let nothing limit your hustle with Dual Pairing that lets you connect two devices at once. Don’t hold back, choose your vibe with Rockerz 333.">
+    
                         </div>
                     </div>
-                </div>
+</button>
+</form>
+
+
             </div>
             <div class="watches">
             <?php 
             $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation WHERE `product-category`='Smart Watch'");
             while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
             ?>
-                <div class="card-1">
+              <form action="product.php" id="order-form" method="POST">
+                <button class="card-1" name="order-btn-original" type="submit">
                     <div class="head">
                     <div class="offer-red-light">You Save <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
                         <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
@@ -183,13 +224,20 @@ require_once("common_files/navbar.php");
 
                         </div>
                         <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
+                      
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
-</form>
+    
+    <input type="hidden" name="product-hidden-image" value="<?php  echo $smart_watch['product-image']?>">
+    <input type="hidden" name="product-hidden-price" value="<?php  echo $smart_watch['product-price']?>">
+    <input type="hidden" name="product-hidden-category" value="<?php  echo $smart_watch['product-category']?>">
+    <input type="hidden" name="product-hidden-dashed-price" value="<?php  echo $smart_watch['product-dashed-price']?>">
+    <input type="hidden" name="product-hidden-description" value="<?php  echo $smart_watch['product-description']?>">
+
                         </div>
                     </div>
-                </div>
+            </button>
+            </form>
                 <?php } ?>
             </div>
         </div>
@@ -214,9 +262,10 @@ require_once("common_files/navbar.php");
             $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation WHERE `product-category`='Dod'");
             while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
             ?>
-                <div class="card-1">
+             <form action="product.php" id="order-form" method="POST">
+                <button class="card-1" name="order-btn-original" type="submit">
                     <div class="head">
-                    <div class="offer-red-light">You Save  <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
+                    <div class="offer-red-light">You Save <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
                         <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
@@ -227,14 +276,22 @@ require_once("common_files/navbar.php");
                             <p>save : <?php  echo $smart_watch['product-dashed-price']-$smart_watch['product-price']?>/-</p>
 
                         </div>
-                        <div class="order-btn yellow-btn">
-                        <form action="product.php" id="order-form" method="POST">
+                        <div class="order-btn">
+                      
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
-</form>
+    
+    <input type="hidden" name="product-hidden-image" value="<?php  echo $smart_watch['product-image']?>">
+    <input type="hidden" name="product-hidden-price" value="<?php  echo $smart_watch['product-price']?>">
+    <input type="hidden" name="product-hidden-category" value="<?php  echo $smart_watch['product-category']?>">
+    <input type="hidden" name="product-hidden-dashed-price" value="<?php  echo $smart_watch['product-dashed-price']?>">
+    
+    <input type="hidden" name="product-hidden-description" value="<?php  echo $smart_watch['product-description']?>">
+
                         </div>
                     </div>
-                </div>
+            </button>
+            </form>
                 <?php } ?>
             </div>
      
@@ -260,9 +317,10 @@ require_once("common_files/navbar.php");
             $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation WHERE `product-category`='gaming'");
             while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
             ?>
-                <div class="card-1">
+                   <form action="product.php" id="order-form" method="POST">
+                <button class="card-1" name="order-btn-original" type="submit">
                     <div class="head">
-                    <div class="offer-red-light">You Save  <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
+                    <div class="offer-red-light">You Save <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
                         <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
@@ -274,13 +332,21 @@ require_once("common_files/navbar.php");
 
                         </div>
                         <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
+                      
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
-</form>
+    
+    <input type="hidden" name="product-hidden-image" value="<?php  echo $smart_watch['product-image']?>">
+    <input type="hidden" name="product-hidden-price" value="<?php  echo $smart_watch['product-price']?>">
+    <input type="hidden" name="product-hidden-category" value="<?php  echo $smart_watch['product-category']?>">
+    <input type="hidden" name="product-hidden-dashed-price" value="<?php  echo $smart_watch['product-dashed-price']?>">
+   
+    <input type="hidden" name="product-hidden-description" value="<?php  echo $smart_watch['product-description']?>">
+
                         </div>
                     </div>
-                </div>
+            </button>
+            </form>
                 <?php } ?>
             </div>
      
@@ -310,9 +376,10 @@ require_once("common_files/navbar.php");
             $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation WHERE `product-category`='Smart Watch'");
             while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
             ?>
-                <div class="card-1">
+                 <form action="product.php" id="order-form" method="POST">
+                <button class="card-1" name="order-btn-original" type="submit">
                     <div class="head">
-                    <div class="offer-red-light">You Save  <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
+                    <div class="offer-red-light">You Save <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
                         <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
@@ -324,18 +391,25 @@ require_once("common_files/navbar.php");
 
                         </div>
                         <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
+                      
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
-</form>
+    
+    <input type="hidden" name="product-hidden-image" value="<?php  echo $smart_watch['product-image']?>">
+    <input type="hidden" name="product-hidden-price" value="<?php  echo $smart_watch['product-price']?>">
+    <input type="hidden" name="product-hidden-category" value="<?php  echo $smart_watch['product-category']?>">
+    <input type="hidden" name="product-hidden-dashed-price" value="<?php  echo $smart_watch['product-dashed-price']?>">
+  
+    <input type="hidden" name="product-hidden-description" value="<?php  echo $smart_watch['product-description']?>">
+
                         </div>
                     </div>
-                </div>
+            </button>
+            </form>
                 <?php } ?>
             </div>
      
         </div>
-
 
 
 
@@ -356,9 +430,10 @@ require_once("common_files/navbar.php");
             $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation WHERE `product-category`='Wired'");
             while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
             ?>
-                <div class="card-1">
+                 <form action="product.php" id="order-form" method="POST">
+                <button class="card-1" name="order-btn-original" type="submit">
                     <div class="head">
-                    <div class="offer-red-light">You Save  <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
+                    <div class="offer-red-light">You Save <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
                         <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
@@ -370,13 +445,21 @@ require_once("common_files/navbar.php");
 
                         </div>
                         <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
+                      
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
-</form>
+    
+    <input type="hidden" name="product-hidden-image" value="<?php  echo $smart_watch['product-image']?>">
+    <input type="hidden" name="product-hidden-price" value="<?php  echo $smart_watch['product-price']?>">
+    <input type="hidden" name="product-hidden-category" value="<?php  echo $smart_watch['product-category']?>">
+    <input type="hidden" name="product-hidden-dashed-price" value="<?php  echo $smart_watch['product-dashed-price']?>">
+
+    <input type="hidden" name="product-hidden-description" value="<?php  echo $smart_watch['product-description']?>">
+
                         </div>
                     </div>
-                </div>
+            </button>
+            </form>
                 <?php } ?>
             </div>
      
@@ -402,9 +485,10 @@ require_once("common_files/navbar.php");
             $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation WHERE `product-category`='Wireless'");
             while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
             ?>
-                <div class="card-1">
+                 <form action="product.php" id="order-form" method="POST">
+                <button class="card-1" name="order-btn-original" type="submit">
                     <div class="head">
-                    <div class="offer-red-light">You Save  <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
+                    <div class="offer-red-light">You Save <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
                         <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
@@ -416,13 +500,21 @@ require_once("common_files/navbar.php");
 
                         </div>
                         <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
+                      
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
-</form>
+    
+    <input type="hidden" name="product-hidden-image" value="<?php  echo $smart_watch['product-image']?>">
+    <input type="hidden" name="product-hidden-price" value="<?php  echo $smart_watch['product-price']?>">
+    <input type="hidden" name="product-hidden-category" value="<?php  echo $smart_watch['product-category']?>">
+    <input type="hidden" name="product-hidden-dashed-price" value="<?php  echo $smart_watch['product-dashed-price']?>">
+    
+    <input type="hidden" name="product-hidden-description" value="<?php  echo $smart_watch['product-description']?>">
+
                         </div>
                     </div>
-                </div>
+            </button>
+            </form>
                 <?php } ?>
             </div>
      
@@ -460,6 +552,13 @@ require_once("common_files/navbar.php");
 <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Buy Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="boAt Immortal 1000d">
+    
+    <input type="hidden" name="product-hidden-image" value="website-images/gaming/boat-immortal-1000d-1.webp">
+    <input type="hidden" name="product-hidden-price" value="2299">
+    <input type="hidden" name="product-hidden-category" value="Gaming">
+    <input type="hidden" name="product-hidden-dashed-price" value="5999">
+
+    <input type="hidden" name="product-hidden-description" value="The game begins here. With Immortal 1000D gaming headphones, don’t just play the game - feel it, live it, and own it. Level up your audio game with 7.1 Channel Surround Sound and Dolby Atmos that unleashes the winning beast inside you. Equipped with 50mm drivers, get a powerful 360° gaming experience like no other. Now, you can conquer every game with a sound that provides position accuracy and abstracts. Your everyday gaming is now double the fun with its RGB LED lights. Its lightweight and ergonomic build ensure you have a comfortable bender with your friends. Don’t look further, level up with Immortal 1000D headphones.">
 </form>
                             </button>
                             
@@ -481,6 +580,13 @@ require_once("common_files/navbar.php");
 <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Buy Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="boAt Airdopes 500 ANC">
+    
+    <input type="hidden" name="product-hidden-image" value="website-images/headphones/ANC/boat-airdopes-500-anc-1.webp">
+    <input type="hidden" name="product-hidden-price" value="4990">
+    <input type="hidden" name="product-hidden-category" value="ANC">
+    <input type="hidden" name="product-hidden-dashed-price" value="9990">
+   
+    <input type="hidden" name="product-hidden-description" value="Tap out of chaos & listen to the #SoundThatMatters with Airdopes 500 ANC. The erratic chatter while commuting, the swoosh of the strong winds, and the deafening traffic – tune out of everything and focus on what matters with Hybrid Active Noise Cancellation up to 35dB. Don’t let your words fail you – its Quad Mics & ENx™ Technology ensure your voice is heard as good as in person. And when you’re ready to game, BEAST™ Mode offers seamless gaming with minimal lag. Plug in. Switch on. Tap out.">
 </form></button>
                         </div>
                     </div>
@@ -499,6 +605,15 @@ require_once("common_files/navbar.php");
 <form action="product.php" id="order-form" method="POST">
     <input type="submit" value="Buy Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="boAt Rockers 235 Pro">
+    
+    <input type="hidden" name="product-hidden-image" value="website-images/headphones/wireless/boAt-rockers-235-pro-1.webp">
+    <input type="hidden" name="product-hidden-price" value="1299">
+    <input type="hidden" name="product-hidden-category" value="Wireless Earphones">
+    <input type="hidden" name="product-hidden-dashed-price" value="1999">
+
+    <input type="hidden" name="product-hidden-description" value="Let Rockerz 235 Pro fuel your passion like a pro. Take your hustle up a notch as its up to 20 HRS playback will keep you pumped up throughout. The BEAST™ Mode and its low latency will make you experience the best of both worlds. #UnravelYourFlow as you get maximum call clarity with ENx™ Technology equipped mics. Work hard & play harder with Rockerz 235 Pro empowering both your worlds.">
+    
+
 </form></button>
                         </div>
                     </div>
@@ -527,9 +642,10 @@ require_once("common_files/navbar.php");
             $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation WHERE `product-category`='ANC'");
             while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
             ?>
-                <div class="card-1">
+                 <form action="product.php" id="order-form" method="POST">
+                <button class="card-1" name="order-btn-original" type="submit">
                     <div class="head">
-                    <div class="offer-red-light">You Save  <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
+                    <div class="offer-red-light">You Save <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
                         <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
                     </div>
                     <div class="tail">
@@ -541,13 +657,21 @@ require_once("common_files/navbar.php");
 
                         </div>
                         <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
+                      
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
-</form>
+    
+    <input type="hidden" name="product-hidden-image" value="<?php  echo $smart_watch['product-image']?>">
+    <input type="hidden" name="product-hidden-price" value="<?php  echo $smart_watch['product-price']?>">
+    <input type="hidden" name="product-hidden-category" value="<?php  echo $smart_watch['product-category']?>">
+    <input type="hidden" name="product-hidden-dashed-price" value="<?php  echo $smart_watch['product-dashed-price']?>">
+ 
+    <input type="hidden" name="product-hidden-description" value="<?php  echo $smart_watch['product-description']?>">
+
                         </div>
                     </div>
-                </div>
+            </button>
+            </form>
                 <?php } ?>
             </div>
      
@@ -566,7 +690,7 @@ require_once("common_files/navbar.php");
     </div>
     <div class="tail">
         <p>Earphones Buying Guide - Everything You Need To Know</p>
-        <a href="#"><button>Explore More</button></a>
+        <a href="right-earphone.php"><button>Explore More</button></a>
     </div>
 </div>
 
@@ -578,7 +702,7 @@ require_once("common_files/navbar.php");
     </div>
     <div class="tail">
         <p>The Ultimate Smartwatch Guide - Get The World On Your Wrist</p>
-        <a href="#"><button>Explore More</button></a>
+        <a href="smart-watch-guide.php"><button>Explore More</button></a>
 
     </div>
 </div>
@@ -589,7 +713,7 @@ require_once("common_files/navbar.php");
     </div>
     <div class="tail">
         <p>The Best Calling Smartwatch: boAt Primia or boAt Wave Connect</p>
-        <a href="#"><button>Explore More</button></a>
+        <a href="primia.php"><button>Explore More</button></a>
 
     </div>
 </div>

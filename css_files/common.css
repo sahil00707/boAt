@@ -217,6 +217,11 @@
   color: red;
 }
 
+.footer .footer-small .f-1 p {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
 .footer .footer-small .f-1 .form-subscribe {
   border: 1px solid #4e4e4e;
   display: -webkit-box;
@@ -228,17 +233,18 @@
   padding: 10px;
 }
 
-.footer .footer-small .f-1 .form-subscribe form input {
+.footer .footer-small .f-1 .form-subscribe form .iii {
   width: 20vw;
   border: none;
   background-color: transparent;
 }
 
-.footer .footer-small .f-1 .form-subscribe form input:focus {
+.footer .footer-small .f-1 .form-subscribe form .iii:focus {
   outline: none;
 }
 
-.footer .footer-small .f-1 .form-subscribe button {
+.footer .footer-small .f-1 .form-subscribe form button {
+  background-color: red;
   padding: 7px 30px;
   background-color: red;
   color: white;

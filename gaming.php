@@ -34,7 +34,8 @@
             $getSmartWatches=mysqli_query($conn, "SELECT * FROM allproductinformation WHERE `product-category`='gaming'");
             while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
             ?>
-                <div class="card-1">
+                    <form action="product.php" id="order-form" method="POST">
+                <button class="card-1" name="order-btn-original" type="submit">
                     <div class="head">
                     <div class="offer-red-light">You Save <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
                         <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
@@ -48,13 +49,21 @@
 
                         </div>
                         <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
+                      
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
-</form>
+    
+    <input type="hidden" name="product-hidden-image" value="<?php  echo $smart_watch['product-image']?>">
+    <input type="hidden" name="product-hidden-price" value="<?php  echo $smart_watch['product-price']?>">
+    <input type="hidden" name="product-hidden-category" value="<?php  echo $smart_watch['product-category']?>">
+    <input type="hidden" name="product-hidden-dashed-price" value="<?php  echo $smart_watch['product-dashed-price']?>">
+    
+    <input type="hidden" name="product-hidden-description" value="<?php  echo $smart_watch['product-description']?>">
+
                         </div>
                     </div>
-                </div>
+            </button>
+            </form>
                 <?php } ?>
                 </div>
                 </div>

@@ -3,6 +3,32 @@ $(document).ready(
         //   $(".tab-btn-1").click();
         var top_picks = $(".top-picks");
         var watches = $(".watches");
+        $(".sub").submit(function(e){
+            e.preventDefault();
+        });
+      $(".subscribe").on("click",
+      function(){
+        var iii=$(".iii").val();
+
+        if(iii.length!=0){
+            $.ajax({
+                url:"subscribe.php",
+                type:"POST",
+                data:{
+                    iii:iii
+                },
+                success:function(data){
+                    if(data=="ok"){
+alert("Email added Successfully");
+                    }
+                    else{
+alert("Email Aleady Exists,try different email");
+                    }
+                }
+            })
+        }
+      }
+      )
         watches.hide();
         $(".features").hide();
 
@@ -83,26 +109,7 @@ $(document).ready(
                 rgba(0, 0, 0, 0.7)
               ),  url(website-images/landing-${carousel_index}.jpg)`);
         }
-        $(".p-imgg").mouseenter(function () {
-            var imgg = $(this).attr("src");
-            var x = imgg.replace("-1.", "-2.");
-            $(this).attr("src", x);
-        })
-        $(".p-imgg").mouseleave(function () {
-            var imgg = $(this).attr("src");
-            var x = imgg.replace("-2.", "-1.");
-            $(this).attr("src", x);
-        });
-        $(".icons-1").mouseenter(function () {
-            var x = $(this).children("div").children("img").attr("src");
-            var p = x.replace("white", "black");
-            $(this).children("div").children("img").attr("src", p);
-        });
-        $(".icons-1").mouseleave(function () {
-            var x = $(this).children("div").children("img").attr("src");
-            var p = x.replace("black", "white");
-            $(this).children("div").children("img").attr("src", p);
-        });
+    
 
 
     }

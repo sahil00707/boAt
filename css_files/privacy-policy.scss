@@ -1,0 +1,36 @@
+
+
+.privacy-policy{
+    background-color: white;
+    padding: 10px 30px;
+    h1{
+        color: black;
+        text-align: center;
+    }
+    h3{
+        text-align: left;
+        color: black;
+        margin: 10px 0;
+    }
+    ol{
+        margin: 0 20px;
+        li{
+            color: black;
+            margin: 10px 0;
+        }
+    }
+    p{
+        color: black;
+        margin: 10px 0;
+    }
+    .ol{
+        li{
+            font-weight: bolder;
+        }
+        ul{
+            li{
+                font-weight: lighter;
+            }
+        }
+    }
+}

@@ -3,6 +3,8 @@
     <link rel="stylesheet" href="css_files/my-cart.css">
     <link rel="stylesheet" href="css_files/common.css">
     <link rel="stylesheet" href="css_files/all-products.css">
+    <link rel="stylesheet" href="css_files/privacy-policy.css">
+    <link rel="stylesheet" href="css_files/right-earphone.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

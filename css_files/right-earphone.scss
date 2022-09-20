@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    .img {
+        width: 100vw;
+        height: 60vh;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .guide {
+        background-color: rgb(203, 203, 238);
+        padding: 20px 15vw;
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        p {
+            text-align: center;
+            color: black;
+        }
+    }
+    .route {
+        padding: 20px 15vw;
+        text-align: left;
+        .img {
+            width: fit-content;
+            margin: auto;
+            text-align: center;
+        }
+        .u{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px 0;
+        }
+        ul{
+            margin-bottom: 20px;
+            li{
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

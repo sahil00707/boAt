@@ -29,9 +29,7 @@
 }
 
 .gaming-section-all {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100vw;
   padding: 50px;
 }
 
@@ -130,7 +128,6 @@
 
 .gaming-section-all .top-picks .card-1 .tail {
   width: 100%;
-  height: 48%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

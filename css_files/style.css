@@ -489,6 +489,85 @@ body .website-content .top-seller .trending-wireless .card-1:hover {
   background-color: #7b7bea;
 }
 
+body .website-content .new-launches {
+  width: 100vw;
+  height: 70vh;
+  padding: 5vh 10vw;
+}
+
+body .website-content .new-launches .product {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+}
+
+body .website-content .new-launches .product .image {
+  width: 50%;
+  height: 100%;
+  background-color: #ceceee;
+  border-radius: 10px;
+}
+
+body .website-content .new-launches .product .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+}
+
+body .website-content .new-launches .product .content {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+body .website-content .new-launches .product .content p {
+  color: #4d4c4c;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 15px auto;
+  padding: 5px 10px;
+  border-bottom: 1px solid red;
+}
+
+body .website-content .new-launches .product .content h3 {
+  color: black;
+}
+
+body .website-content .new-launches .product .content .special-launch-price h4 {
+  color: white;
+  background-color: red;
+  border: 1px solid red;
+  padding: 7px 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+body .website-content .new-launches .product .content .know-more {
+  margin: 20px 0;
+}
+
+body .website-content .new-launches .product .content .know-more a {
+  text-decoration: none;
+}
+
+body .website-content .new-launches .product .content .know-more a button {
+  padding: 7px 30px;
+  background-color: transparent;
+  border: 2px solid red;
+  color: red;
+  font-weight: bolder;
+}
+
 body .website-content .what-people-says {
   background-color: #ceceee;
   padding: 5vh 0 0vh 0;
@@ -635,6 +714,8 @@ body .website-content .boat_blogs .blog {
 body .website-content .boat_blogs .blog .head {
   height: 200px;
   width: 100%;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 body .website-content .boat_blogs .blog .head img {
@@ -642,6 +723,8 @@ body .website-content .boat_blogs .blog .head img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 body .website-content .boat_blogs .blog .tail {
@@ -667,6 +750,11 @@ body .website-content .boat_blogs .blog .tail a button {
 body .website-content .boat_blogs .blog .tail a button:hover {
   color: red;
   background-color: transparent;
+}
+
+body .website-content .boat_blogs .blog:hover {
+  -webkit-box-shadow: 0 10px 0px #7b7bea;
+          box-shadow: 0 10px 0px #7b7bea;
 }
 
 body .website-content .in-press {

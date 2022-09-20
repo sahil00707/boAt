@@ -3,7 +3,7 @@ session_start();
 require_once("db_connect.php");
 $product_imp_name="boAt Immortal 1000d";
 $product_imp_img="website-images/headphones/wired/boat-bassheads-102-1.webp";
-$product_imp_img2="website-images/headphones/wired/boat-bassheads-102-1.webp";
+//$product_imp_img2="website-images/headphones/wired/boat-bassheads-102-1.webp";
 $product_imp_price="2499";
 $product_imp_category="HeadPhones";
 $product_imp_color="black";
@@ -12,24 +12,32 @@ $product_imp_dashed_price="4999";
 //------
 if(isset($_POST['order-btn-original'])){
 $product_imp_name=$_POST['product-hidden-name'];
+$product_imp_img=$_POST['product-hidden-image'];
+//$product_imp_img2=$_POST['product-hidden-image-2'];
+$product_imp_price=$_POST['product-hidden-price'];
+$product_imp_category=$_POST['product-hidden-category'];
+//$product_imp_color=$_POST['product-hidden-name'];
+$product_imp_dashed_price=$_POST['product-hidden-dashed-price'];
+$description_imp=$_POST['product-hidden-description'];
+
 }
-///-----
-$getProductDetails=mysqli_query($conn,"SELECT * FROM allProductInformation");
+// ///-----
+// $getProductDetails=mysqli_query($conn,"SELECT * FROM allProductInformation");
 
 
-while($row=mysqli_fetch_assoc($getProductDetails)){
-    if($row['product-name']==$product_imp_name){
-$product_imp_price=$row['product-price'];
-$product_imp_category=$row['product-category'];
-$product_imp_color=$row['product-color'];
-$product_imp_dashed_price=$row['product-dashed-price'];
-$product_imp_img=$row['product-image'];
-$description_imp=$row['product-description'];
-if($row['product-other-image']!="")
-$product_imp_img2=$row['product-other-image'];
-break;
-    }
-}
+// while($row=mysqli_fetch_assoc($getProductDetails)){
+//     if($row['product-name']==$product_imp_name){
+// $product_imp_price=$row['product-price'];
+// $product_imp_category=$row['product-category'];
+// $product_imp_color=$row['product-color'];
+// $product_imp_dashed_price=$row['product-dashed-price'];
+// $product_imp_img=$row['product-image'];
+// $description_imp=$row['product-description'];
+// if($row['product-other-image']!="")
+// $product_imp_img2=$row['product-other-image'];
+// break;
+//     }
+// }
 ?>
 
 <!DOCTYPE html>
@@ -79,23 +87,15 @@ break;
                     </div>
                 </div>
             </div>
-            <div class="thumbnails">
-                <button class="thumbnail-1" id="thumbnail-1">
-                    <img src="<?php echo $product_imp_img?>" alt="" id="thumbnail-1-img">
-                </button>
-                <button class="thumbnail-2" id="thumbnail-2">
-                    <img src="<?php echo $product_imp_img2?>" alt=""  id="thumbnail-2-img">
-
-                </button>
-            </div>
+          
         </div>
 
 
    
         <div class="product-section-3">
             <div class="cart">
-                <h1>Rs.<span id="product-price-cart"><?php echo $product_imp_price?></span> <span id="product-price-cart-dashed">Rs. <?php echo $product_imp_dashed_price?></span></h1>
-                <h2>You save Rs. <?php echo $product_imp_dashed_price-$product_imp_price?>(<?php  echo  round(100*($product_imp_dashed_price-$product_imp_price)/$product_imp_dashed_price) ?>% OFF)</h2>
+                <h1>Rs.<span id="product-price-cart"><?php echo $product_imp_price?> </span> <span class="offf">(<?php  echo  round(100*($product_imp_dashed_price-$product_imp_price)/$product_imp_dashed_price) ?>% OFF)</span></h1>
+            
 
                 <div class="quantity">
                     <div class="select-quantity">
@@ -171,7 +171,8 @@ break;
             LIMIT 4;");
             while($smart_watch=mysqli_fetch_assoc($getSmartWatches)){  
             ?>
-                <div class="card-1">
+                <form action="product.php" id="order-form" method="POST">
+                <button class="card-1" name="order-btn-original" type="submit">
                     <div class="head">
                     <div class="offer-red-light">You Save <?php echo  round(100*( $smart_watch['product-dashed-price']-$smart_watch['product-price'])/$smart_watch['product-dashed-price'])?>%</div>
                         <img src="<?php  echo $smart_watch['product-image']?>" alt="" class="p-imgg">
@@ -185,13 +186,21 @@ break;
 
                         </div>
                         <div class="order-btn">
-                        <form action="product.php" id="order-form" method="POST">
+                      
     <input type="submit" value="Order Now" id="order-btn-original" name="order-btn-original">
     <input type="hidden" name="product-hidden-name" value="<?php  echo $smart_watch['product-name']?>">
-</form>
+    
+    <input type="hidden" name="product-hidden-image" value="<?php  echo $smart_watch['product-image']?>">
+    <input type="hidden" name="product-hidden-price" value="<?php  echo $smart_watch['product-price']?>">
+    <input type="hidden" name="product-hidden-category" value="<?php  echo $smart_watch['product-category']?>">
+    <input type="hidden" name="product-hidden-dashed-price" value="<?php  echo $smart_watch['product-dashed-price']?>">
+
+    <input type="hidden" name="product-hidden-description" value="<?php  echo $smart_watch['product-description']?>">
+
                         </div>
                     </div>
-                </div>
+            </button>
+            </form>
                 <?php } ?>
                 </div>
                 </div>

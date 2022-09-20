@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button,input{
+    cursor: pointer;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  .all_product{
+    
+    .title{
+        padding: 30px;
+        a{
+            text-decoration: none;
+            button{
+                padding: 13px 0;
+                width: 120px;
+                background-color: white;
+                font-family: "Poppins", sans-serif;
+                color: black;
+                font-weight: bolder;
+            }
+        }
+        h1{
+            color: white;
+            font-family: "Titillium Web", sans-serif;
+        }
+        .red_border{
+            width: 300px;
+            height: 8px;
+            background-color: red;
+        }
+    }
+    .all_items{
+      
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .item {
+            width: 310px;
+            height: fit-content;
+            background-color: rgb(206, 206, 238);
+            border-radius: 10px;
+            margin: 0 15px;
+            margin-bottom: 35px;
+            position: relative;
+            padding: 11px;
+            transition: 0.25s ease;
+            .head {
+                width: 100%;
+                height: 52%;
+
+                .offer-red {
+                    width: fit-content;
+                    height: fit-content;
+                    background-color: red;
+                    color: white;
+                    position: absolute;
+                    left: 0;
+                    top: 20px;
+                    font-weight: bolder;
+                    z-index: 10;
+                    font-size: 14px;
+                    padding: 5px 15px;
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                }
+                .offer-red-light {
+                    width: fit-content;
+                    height: fit-content;
+                    background-color: white;
+                    color: red;
+                    position: absolute;
+                    left: 0;
+                    font-size: 14px;
+                    top: 20px;
+                    font-weight: bolder;
+                    z-index: 10;
+                    padding: 5px 15px;
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                }
+                img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: contain;
+                    border-radius: 5px;
+                    //         transition: 1s ease;
+                }
+            }
+            .tail {
+                width: 100%;
+                height: 48%;
+                height: fit-content;
+                background-color: white;
+                border-radius: 5px;
+                text-align: left;
+                padding: 12px;
+                margin: 10px 0 00 0;
+                h4 {
+                    color: black;
+                    margin-bottom: 5px;
+                    font-family: "Poppins", sans-serif;
+                }
+        
+          
+                .order-btn {
+                    width: 100%;
+                    input {
+                        width: 100%;
+                        padding: 8px 0;
+
+                        //    background-color: rgb(254,0,0);
+                        background: linear-gradient(to right, rgb(254, 0, 0), rgb(254, 0, 0));
+                        color: white;
+                        border: 2px solid red;
+                        border-radius: 3px;
+                        font-size: medium;
+                        font-weight: bolder;
+                        font-family: "Poppins", sans-serif;
+                        margin: 5px 0 0 0;
+                    }
+                 
+                    .delete_btn{
+                        width: 100%;
+                        padding: 8px 0;
+color: red;
+                        //    background-color: rgb(254,0,0);
+                        background: transparent;
+                        color: red;
+                        border: 2px solid red;
+                        font-size: medium;
+                        font-weight: bolder;
+                        font-family: "Poppins", sans-serif;
+                        margin: 5px 0 0 0;
+                        transition: 0.3s ease;
+                    }
+                    .delete_btn:hover{
+                        background-color: black;
+                        color: white;
+                        border-color: black;
+                    }
+                }
+             
+            }
+        }
+     
+    }
+    .add{
+        width: fit-content;
+        margin:  auto;
+        
+    a{
+        justify-content: center;
+        margin: auto;
+        button{
+            padding: 11px 30px;
+            background-color: red;
+            color: white;
+            font-size: 18px;
+            font-family: "Poppins", sans-serif;
+        }
+    }}
+  }
+}

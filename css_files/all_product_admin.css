@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button, input {
+  cursor: pointer;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+body .all_product .title {
+  padding: 30px;
+}
+
+body .all_product .title a {
+  text-decoration: none;
+}
+
+body .all_product .title a button {
+  padding: 13px 0;
+  width: 120px;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: bolder;
+}
+
+body .all_product .title h1 {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+}
+
+body .all_product .title .red_border {
+  width: 300px;
+  height: 8px;
+  background-color: red;
+}
+
+body .all_product .all_items {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .all_product .all_items .item {
+  width: 310px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #ceceee;
+  border-radius: 10px;
+  margin: 0 15px;
+  margin-bottom: 35px;
+  position: relative;
+  padding: 11px;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+
+body .all_product .all_items .item .head {
+  width: 100%;
+  height: 52%;
+}
+
+body .all_product .all_items .item .head .offer-red {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: red;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  font-weight: bolder;
+  z-index: 10;
+  font-size: 14px;
+  padding: 5px 15px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+body .all_product .all_items .item .head .offer-red-light {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  color: red;
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  top: 20px;
+  font-weight: bolder;
+  z-index: 10;
+  padding: 5px 15px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+body .all_product .all_items .item .head img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 5px;
+}
+
+body .all_product .all_items .item .tail {
+  width: 100%;
+  height: 48%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  border-radius: 5px;
+  text-align: left;
+  padding: 12px;
+  margin: 10px 0 00 0;
+}
+
+body .all_product .all_items .item .tail h4 {
+  color: black;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+body .all_product .all_items .item .tail .order-btn {
+  width: 100%;
+}
+
+body .all_product .all_items .item .tail .order-btn input {
+  width: 100%;
+  padding: 8px 0;
+  background: -webkit-gradient(linear, left top, right top, from(#fe0000), to(#fe0000));
+  background: linear-gradient(to right, #fe0000, #fe0000);
+  color: white;
+  border: 2px solid red;
+  border-radius: 3px;
+  font-size: medium;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+  margin: 5px 0 0 0;
+}
+
+body .all_product .all_items .item .tail .order-btn .delete_btn {
+  width: 100%;
+  padding: 8px 0;
+  color: red;
+  background: transparent;
+  color: red;
+  border: 2px solid red;
+  font-size: medium;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+  margin: 5px 0 0 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+body .all_product .all_items .item .tail .order-btn .delete_btn:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+body .all_product .add {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+body .all_product .add a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+body .all_product .add a button {
+  padding: 11px 30px;
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+/*# sourceMappingURL=all_product_admin.css.map */

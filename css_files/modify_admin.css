@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button, input {
+  cursor: pointer;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+body .modify {
+  padding: 30px;
+}
+
+body .modify .head h1 {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+}
+
+body .modify .head .border {
+  width: 300px;
+  height: 8px;
+  background-color: red;
+}
+
+body .modify .form {
+  max-width: 400px;
+  padding: 30px 0 0 0;
+}
+
+body .modify .form .update {
+  width: 100%;
+  background-color: red;
+  color: white;
+  padding: 13px 0;
+  font-size: 17px;
+}
+
+body .modify .form .iDiv {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 2px solid white;
+  position: relative;
+  padding: 15px 0 7px 7px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+body .modify .form .iDiv p {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  padding: 0 5px;
+  color: white;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+body .modify .form .iDiv textarea {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: "Poppins", sans-serif;
+}
+
+body .modify .form .iDiv input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: "Poppins", sans-serif;
+}
+
+body .modify .form .iDiv input:focus {
+  outline: none;
+}
+
+body .modify a button {
+  width: 100%;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  border: none;
+  font-size: 16px;
+  padding: 13px 0;
+  max-width: 400px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-top: 15px;
+}
+/*# sourceMappingURL=modify_admin.css.map */

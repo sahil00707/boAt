@@ -34,10 +34,15 @@ foreach($_SESSION['my_cart'] as $k){
   $product_quantity=$k['product_quantity'];
   $sub_total=$product_current_price*$product_quantity;
 
-  $insertOrder="INSERT INTO order_details(User_mobile_number,product_name,product_price,product_quantity,product_sub_total) VALUES('$number','$product_name','$product_current_price','$product_quantity','$sub_total')";
+  $insertOrder="INSERT INTO order_details(User_mobile_number,product_name,product_quantity,product_sub_total) VALUES('$number','$product_name','$product_quantity','$product_current_price')";
   $sql=mysqli_query($conn,$insertOrder);
   if($sql){
 
+    echo "
+    <script>
+    alert('Your Order is Successfully placed');
+    </script>
+    ";
   unset($_SESSION['my_cart']);
 echo "
 <script>
@@ -72,11 +77,11 @@ window.location.href='index.php';
 <body>
   <div class="center">
 <form action="#" method="POST">
-    <h3>Checkout</h3>
-    <input type="text" placeholder="Enter Your Name" name="username" required >
-    <input type="Email" placeholder="Enter Your Email Id" name="email" required>
-    <input type="number" placeholder="Enter Your Mobile Number" name="number" required>
-    <input type="text" placeholder="Enter Your Address" name="address" required>
+    <h2>Checkout</h2>
+    <input  autocomplete="off" type="text" placeholder="Enter Your Name" name="username" required  onkeydown="return /[a-z ]/i.test(event.key)">
+    <input  autocomplete="off" type="Email" placeholder="Enter Your Email Id" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" onkeypress="return event.charCode != 32">
+    <input  autocomplete="off" type="number" placeholder="Enter Your Mobile Number" name="number" required>
+    <input  autocomplete="off" type="text" placeholder="Enter Your Address" name="address" required>
     <span><h4>Number of Items : </h4><p><?php echo  $number_of_items?></p></span>
     <span><h4>Total : </h4><p><?php  echo $totall?>/-</p></span>
     <input type="submit" value="Pay" name="pay_btn">

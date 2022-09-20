@@ -14,7 +14,7 @@ require_once("db_connect.php");
       <select name="select_category" onchange="location = this.value;">
         <option value="">Categories</option>
         <option value="gaming.php">Gaming</option>
-        <option value="Headphones.php">HeadPhones</option>
+        <option value="HeadPhones.php">HeadPhones</option>
         <option value="smart-watches.php">Smart Watches</option>
       </select>
           

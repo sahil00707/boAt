@@ -160,15 +160,9 @@ body .product-all .product-section-3 .cart h1 #product-price-cart {
   font-size: larger;
 }
 
-body .product-all .product-section-3 .cart h1 #product-price-cart-dashed {
-  color: grey;
-  font-size: large;
-  text-decoration: line-through;
-}
-
-body .product-all .product-section-3 .cart h2 {
+body .product-all .product-section-3 .cart h1 .offf {
   color: green;
-  font-size: small;
+  font-size: 23px;
 }
 
 body .product-all .product-section-3 .cart .quantity {

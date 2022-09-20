@@ -7,8 +7,7 @@
 }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(blue), to(#5a5af9));
-  background: linear-gradient(to right, blue, #5a5af9);
+  background: #099595;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,10 +27,11 @@ body .center {
   height: -moz-fit-content;
   height: fit-content;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 0px;
+  background-color: black;
 }
 
-body .center h3 {
+body .center h2 {
   text-align: center;
   color: white;
   padding: 10px;
@@ -39,39 +39,39 @@ body .center h3 {
 
 body .center input {
   width: 100%;
-  border: 2px solid white;
+  border: 2px solid #323232;
   padding: 10px;
-  background-color: transparent;
+  background-color: #323232;
   margin: 10px 0;
   border-radius: 5px;
   color: white;
 }
 
 body .center input::-webkit-input-placeholder {
-  color: white;
+  color: #afafaf;
 }
 
 body .center input:-ms-input-placeholder {
-  color: white;
+  color: #afafaf;
 }
 
 body .center input::-ms-input-placeholder {
-  color: white;
+  color: #afafaf;
 }
 
 body .center input::placeholder {
-  color: white;
+  color: #afafaf;
 }
 
 body .center input[type="submit"] {
-  background-color: white;
-  color: blue;
-  border: 2px solid white;
+  background-color: #099595;
+  color: white;
+  border: 2px solid #099595;
   font-weight: bolder;
 }
 
 body .center input:focus {
-  outline: 2px solid white;
+  outline: 2px solid #099595;
   border-color: transparent;
 }
 
@@ -93,8 +93,8 @@ body .center span p {
 body .center a button {
   width: 100%;
   padding: 10px;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid #099595;
+  color: #099595;
   background-color: transparent;
   font-weight: bolder;
   border-radius: 5px;
